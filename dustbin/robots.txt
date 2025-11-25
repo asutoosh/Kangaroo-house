@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kangaroohouse.com/sitemap.xml
+
+# Important pages for crawling
+Allow: /index.html
+Allow: /#about
+Allow: /#services
+Allow: /#gallery
+Allow: /#reviews
+Allow: /#contact
+
+# Disallow admin or private areas (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
+
