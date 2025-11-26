@@ -13,6 +13,7 @@
     --text-white: #FFFFFF;
     --text-dark: #000000;
     --text-gray: #999999;
+    --text-light: #4b5563;
     --border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -322,59 +323,82 @@ body {
     display: block;
 }
 
-.services-content {
-    background-color: var(--bg-white);
-    padding: 10rem 6rem;
+.hostel-services {
+    padding: 6rem 0;
+    background: var(--bg-white);
+}
+
+.hostel-services-header {
     text-align: center;
-    max-width: 1400px;
+    margin-bottom: 3rem;
+}
+
+.hostel-services-header p {
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.hostel-services-header h3 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: var(--text-dark);
+}
+
+.hostel-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
     margin: 0 auto;
-    box-sizing: border-box;
-    min-height: 40vh;
+    padding: 0 1rem;
+}
+
+.hostel-service-card {
+    background: #f7f7f7;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+.hostel-service-image {
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
     position: relative;
-    z-index: 3;
-    margin-top: 0;
 }
 
-.services-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 5rem;
-    padding: 0 3rem;
-}
-
-.label-accent {
-    width: 12px;
-    height: 12px;
-    background-color: var(--primary-color);
+.hostel-service-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+    position: relative;
     display: block;
 }
 
-.label-text {
-    background-color: #f5f5f5;
-    padding: 0.5rem 1.5rem;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-dark);
-    border-radius: 4px;
+.hostel-service-card:hover .hostel-service-image img {
+    transform: scale(1.08);
 }
 
-.services-title {
-    font-size: clamp(2rem, 6vw, 4.5rem);
-    font-weight: 900;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
+.hostel-service-content {
+    padding: 1.75rem;
+}
+
+.hostel-service-content h4 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
     color: var(--text-dark);
-    text-transform: uppercase;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 3rem;
+}
+
+.hostel-service-content p {
+    color: var(--text-light, #4b5563);
+    line-height: 1.7;
+    font-size: 0.98rem;
 }
 
 /* Responsive Design */
@@ -491,36 +515,61 @@ body {
         transform: scale(0.7) translateY(0);
     }
 
-    .services-content {
-        min-height: 50vh;
-        padding: 6rem 3rem;
+    .hostel-services {
+        padding: 3rem 0;
     }
 
-    .services-content {
-        padding: 6rem 3rem;
-        max-width: 100%;
+    .hostel-services-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
     }
 
-    .services-label {
-        margin-bottom: 3rem;
-        gap: 0.75rem;
-        padding: 0 2rem;
+    /* Horizontal Card Layout for Mobile */
+    .hostel-service-card {
+        min-height: 140px; /* Fixed height for consistency */
+        flex-direction: row; /* Horizontal layout */
+        align-items: stretch;
+        padding: 0;
     }
 
-    .label-accent {
-        width: 10px;
-        height: 10px;
+    .hostel-service-image {
+        flex: 0 0 40%;
+        width: 40%;
+        height: auto;
+        overflow: hidden;
     }
 
-    .label-text {
-        padding: 0.4rem 1rem;
-        font-size: 0.7rem;
+    .hostel-service-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 
-    .services-title {
-        font-size: 2rem;
-        padding: 0 2rem;
+    .hostel-service-content {
+        flex: 0 0 60%;
+        width: 60%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        background: #f7f7f7;
+    }
+
+    .hostel-service-content h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
         line-height: 1.2;
+        color: #000000;
+        display: block;
+    }
+
+    .hostel-service-content p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        color: #4b5563;
+        display: block;
     }
 }
 
@@ -573,6 +622,15 @@ body {
         font-size: 1.05rem;
     }
 
+    .hostel-services {
+        padding: 1.25rem 0;
+    }
+
+    .hostel-services-grid {
+        gap: 0.75rem;
+        padding: 0 1rem;
+    }
+
     .services-image-wrapper {
         width: calc(100% - 2rem);
         aspect-ratio: 16 / 9;
@@ -585,38 +643,55 @@ body {
         transform: scale(0.7) translateY(0);
     }
 
-    .services-content {
-        min-height: 50vh;
-        padding: 5rem 2rem;
+    .hostel-service-card {
+        flex-direction: column !important;
+        padding: 0 !important;
+        border-radius: 16px !important;
+        overflow: visible !important;
+        min-height: auto !important;
     }
 
-    .services-content {
-        padding: 5rem 2rem;
+    .hostel-service-image {
+        width: 100% !important;
+        height: auto !important;
+        flex: none !important;
+        flex-shrink: 0 !important;
+        overflow: hidden !important;
+        position: relative !important;
     }
 
-    .services-label {
-        margin-bottom: 2.5rem;
-        gap: 0.5rem;
-        padding: 0 1rem;
+    .hostel-service-image img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block !important;
+        position: relative !important;
     }
 
-    .services-title {
-        padding: 0 1rem;
+    .hostel-service-content {
+        width: 100% !important;
+        padding: 1rem 1.2rem 1.5rem !important;
+        display: block !important;
+        text-align: left !important;
+        flex: none !important;
+        background: #f7f7f7 !important;
+    }
+    
+    .hostel-service-content h4 {
+        font-size: 1.05rem !important;
+        margin-bottom: 0.45rem !important;
+        color: #000000 !important;
+        display: block !important;
     }
 
-    .label-accent {
-        width: 8px;
-        height: 8px;
-    }
-
-    .label-text {
-        padding: 0.35rem 0.75rem;
-        font-size: 0.65rem;
-    }
-
-    .services-title {
-        font-size: 1.75rem;
-        line-height: 1.15;
+    .hostel-service-content p {
+        font-size: 0.85rem !important;
+        line-height: 1.45 !important;
+        color: #4b5563 !important;
+        display: block !important;
+        overflow: visible !important;
+        -webkit-line-clamp: unset !important;
+        -webkit-box-orient: unset !important;
     }
 }
 
