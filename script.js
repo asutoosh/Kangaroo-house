@@ -52,86 +52,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Typed.js Animation for Location Text
-document.addEventListener('DOMContentLoaded', () => {
-    const typedLocation = document.getElementById('typed-location');
-    if (typedLocation) {
-        var typed = new Typed("#typed-location", {
-            strings: [
-                "Maharaja Agrasen College",
-                "Shaheed Rajguru College",
-                "Drishti IAS",
-                "Noida",
-                "and way beyond."
-            ],
-            typeSpeed: 50,
-            backSpeed: 30,
-            backDelay: 1200,
-            loop: false,
-            smartBackspace: true,
-            onComplete: function() {
-                // Ensure final phrase stays visible with no cursor blinking
-                const cursor = document.querySelector('.typed-cursor');
-                if (cursor) {
-                    cursor.style.display = 'none';
-                }
-            }
-        });
-    }
-});
-
-
-// Image Zoom Out and Move Up Effect on Scroll
-const servicesImage = document.getElementById('servicesImage');
-const servicesHero = document.querySelector('.services-hero');
-
-if (servicesImage && servicesHero) {
-    let ticking = false;
-    
-    window.addEventListener('scroll', () => {
-        if (!ticking) {
-            window.requestAnimationFrame(() => {
-                const rect = servicesHero.getBoundingClientRect();
-                const windowHeight = window.innerHeight;
-                const isMobile = window.innerWidth <= 480;
-                
-                // Calculate when section enters viewport
-                if (rect.top < windowHeight && rect.bottom > 0) {
-                    // Calculate scroll progress based on section visibility
-                    // Start calculating when section top enters viewport
-                    const sectionStart = windowHeight;
-                    const sectionEnd = -rect.height;
-                    const scrollRange = sectionStart - sectionEnd;
-                    const currentScroll = sectionStart - rect.top;
-                    
-                    // Calculate progress (0 to 1) as section scrolls through viewport
-                    let scrollProgress = Math.max(0, Math.min(1, currentScroll / scrollRange));
-                    
-                    // Normalize to reach 1.0 at 50% scroll (0.5)
-                    // When scrollProgress is 0.5, normalizedProgress should be 1.0
-                    const normalizedProgress = Math.min(1, scrollProgress / 0.5);
-                    
-                    if (isMobile) {
-                        // Mobile: Start at 0.7x zoom, reach 1.0 at 50% scroll
-                        const initialScale = 0.7;
-                        const scale = initialScale + (normalizedProgress * (1.0 - initialScale));
-                        const translateY = normalizedProgress * -15;
-                        servicesImage.style.transform = `scale(${scale}) translateY(${translateY}%)`;
-                    } else {
-                        // Desktop: Start at 0.7x zoom, reach 1.0 at 50% scroll
-                        const initialScale = 0.7;
-                        const scale = initialScale + (normalizedProgress * (1.0 - initialScale));
-                        const translateY = normalizedProgress * -12;
-                        servicesImage.style.transform = `scale(${scale}) translateY(${translateY}%)`;
-                    }
-                }
-                ticking = false;
-            });
-            ticking = true;
-        }
-    }, { passive: true });
-}
-
 // ========================================
 // Portfolio Infinite Carousel
 // ========================================
@@ -316,3 +236,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// ========================================
+// Scroll Reveal Animation (Unblur Effect)
+// ========================================
+
+document.addEventListener('DOMContentLoaded', () => {
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    
+    if (revealElements.length > 0) {
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-visible');
+                }
+            });
+        }, {
+            root: null,
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        revealElements.forEach(el => {
+            revealObserver.observe(el);
+        });
+    }
+});
+
+// ========================================
+// Grid Background Reveal Effect
+// ========================================
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.hostel-services, .hero');
+    
+    sections.forEach(section => {
+        section.addEventListener('mousemove', (e) => {
+            const rect = section.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            section.style.setProperty('--mouse-x', `${x}px`);
+            section.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
+});

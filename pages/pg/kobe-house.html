@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kobe House - PG in North Campus | Kangaroo House</title>
+    <link rel="stylesheet" href="pg-styles.css">
+    <link rel="stylesheet" href="pg-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (Same as PG.html) -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="../../index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                    <span class="logo-icon">🦘</span>
+                    <span class="logo-text">KANGAROO HOUSE</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="../../index.html#home">HOME</a></li>
+                    <li><a href="PG.html">PG</a></li>
+                    <li><a href="../../index.html#services">SERVICES</a></li>
+                    <li><a href="../../index.html#gallery">GALLERY</a></li>
+                    <li><a href="../../index.html#reviews">REVIEWS</a></li>
+                    <li><a href="../../index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="detail-container">
+        <!-- Left Column -->
+        <div class="detail-left">
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumbs">
+                <a href="../../index.html">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="PG.html">PG Listings</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">Kobe House</span>
+            </nav>
+
+            <!-- Title & Location -->
+            <div>
+                <h1 class="page-title" style="margin-bottom: 0.5rem;">Kobe House</h1>
+                <p class="pg-location">📍 North Campus, Delhi</p>
+            </div>
+
+            <!-- Gallery -->
+            <div class="gallery-container">
+                <div class="main-image">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&h=400&fit=crop" alt="Kobe House Main View" id="mainImage">
+                </div>
+                <div class="thumbnail-grid">
+                    <div class="thumbnail active" onclick="changeImage(this, 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&h=400&fit=crop')">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&h=400&fit=crop" alt="Room View">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1560184897-ae75f418493e?w=600&h=400&fit=crop')">
+                        <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?w=600&h=400&fit=crop" alt="Common Area">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600&h=400&fit=crop')">
+                        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600&h=400&fit=crop" alt="Washroom">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop')">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop" alt="Balcony">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600&h=400&fit=crop')">
+                        <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600&h=400&fit=crop" alt="Study Area">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1560184897-ae75f418493e?w=600&h=400&fit=crop')">
+                        <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?w=600&h=400&fit=crop" alt="Kitchen">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600&h=400&fit=crop')">
+                        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600&h=400&fit=crop" alt="Bathroom">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&h=400&fit=crop')">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&h=400&fit=crop" alt="Entrance">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop')">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop" alt="Terrace">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600&h=400&fit=crop')">
+                        <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600&h=400&fit=crop" alt="Parking">
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Us -->
+            <section class="content-section">
+                <h2 class="section-title">About Property</h2>
+                <p style="margin-bottom: 1rem;">
+                    Kobe House is a premium women's PG located in the vibrant North Campus area of Delhi. Designed exclusively for female students and professionals who value safety, comfort, and community, this property offers a secure and welcoming environment.
+                </p>
+                <p>
+                    With modern interiors, spacious rooms, and a cozy common area, it feels less like a hostel and more like a second home. Whether you are studying at Miranda House or St. Stephen's College, our location ensures you are never far from your destination.
+                </p>
+            </section>
+
+            <!-- Amenities -->
+            <section class="content-section">
+                <h2 class="section-title">Amenities</h2>
+                
+                <div class="amenity-category">
+                    <h3>In Room</h3>
+                    <div class="amenities-grid">
+                        <div class="amenity-item"><span class="amenity-icon">🛏️</span> Spacious Rooms</div>
+                        <div class="amenity-item"><span class="amenity-icon">❄️</span> Air Conditioner</div>
+                        <div class="amenity-item"><span class="amenity-icon">🛌</span> Individual Bed</div>
+                        <div class="amenity-item"><span class="amenity-icon">🚿</span> Attached Bathroom</div>
+                        <div class="amenity-item"><span class="amenity-icon">📚</span> Study Desk</div>
+                        <div class="amenity-item"><span class="amenity-icon">🌅</span> Attached Balcony</div>
+                        <div class="amenity-item"><span class="amenity-icon">🚪</span> Wardrobe</div>
+                        <div class="amenity-item"><span class="amenity-icon">🪞</span> Mirror</div>
+                    </div>
+                </div>
+
+                <div class="amenity-category">
+                    <h3>Community & Services</h3>
+                    <div class="amenities-grid">
+                        <div class="amenity-item"><span class="amenity-icon">📶</span> High Speed Wi-Fi</div>
+                        <div class="amenity-item"><span class="amenity-icon">🧹</span> Housekeeping</div>
+                        <div class="amenity-item"><span class="amenity-icon">🧺</span> Laundry/Washing Machine</div>
+                        <div class="amenity-item"><span class="amenity-icon">💧</span> Filtered RO Water</div>
+                        <div class="amenity-item"><span class="amenity-icon">📺</span> Smart TV</div>
+                        <div class="amenity-item"><span class="amenity-icon">📹</span> CCTV Surveillance</div>
+                        <div class="amenity-item"><span class="amenity-icon">🅿️</span> Two-wheeler Parking</div>
+                        <div class="amenity-item"><span class="amenity-icon">🍽️</span> 4 Times Meals</div>
+                        <div class="amenity-item"><span class="amenity-icon">🔥</span> Fire Extinguisher</div>
+                        <div class="amenity-item"><span class="amenity-icon">🔐</span> 24/7 Security</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Food Menu -->
+            <section class="content-section">
+                <h2 class="section-title">Food Menu</h2>
+                <p>Nutritious and delicious meals served 4 times a day.</p>
+                <table class="food-menu-table">
+                    <thead>
+                        <tr>
+                            <th>Meal</th>
+                            <th>Time</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Breakfast</td>
+                            <td>8:00 AM - 10:00 AM</td>
+                            <td>Paratha/Poha/Sandwich + Tea/Coffee</td>
+                        </tr>
+                        <tr>
+                            <td>Lunch</td>
+                            <td>1:00 PM - 3:00 PM</td>
+                            <td>Seasonal Veg, Dal, Rice, Roti, Salad</td>
+                        </tr>
+                        <tr>
+                            <td>Evening Snacks</td>
+                            <td>5:00 PM - 6:00 PM</td>
+                            <td>Tea/Coffee + Biscuits/Snacks</td>
+                        </tr>
+                        <tr>
+                            <td>Dinner</td>
+                            <td>8:00 PM - 10:00 PM</td>
+                            <td>Paneer/Special Veg, Dal, Rice, Roti, Sweet</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Accessibility -->
+            <section class="content-section">
+                <h2 class="section-title">Location & Accessibility</h2>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
+                    <li class="amenity-item"><span class="amenity-icon">🚶</span> 300m from Miranda House College</li>
+                    <li class="amenity-item"><span class="amenity-icon">🚶</span> 600m from St. Stephen's College</li>
+                    <li class="amenity-item"><span class="amenity-icon">🚇</span> 8 mins from Vishwavidyalaya Metro</li>
+                    <li class="amenity-item"><span class="amenity-icon">🚌</span> 5 mins to nearest Bus Stop</li>
+                    <li class="amenity-item"><span class="amenity-icon">✈️</span> 40 mins to IGI Airport</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Right Column -->
+        <div class="detail-right">
+            <div class="booking-card">
+                <div class="price-header">
+                    <div class="price-label">Starting from</div>
+                    <div>
+                        <span class="price-amount">₹17,500</span>
+                        <span class="price-period">/ month</span>
+                    </div>
+                    <div class="price-label" style="margin-top: 0.5rem; color: var(--success-color);">Filling Fast! ⚡</div>
+                </div>
+
+                <form class="booking-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="">Select Occupancy</option>
+                            <option value="single">Single Room</option>
+                            <option value="double">Twin Sharing</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-block btn-primary">Schedule a Visit</button>
+                    <button type="button" class="btn-block btn-secondary">Reserve Now</button>
+                </form>
+                
+                <p style="margin-top: 1rem; font-size: 0.8rem; text-align: center; color: var(--text-muted);">
+                    By clicking, you agree to our Terms & Conditions.
+                </p>
+            </div>
+
+            <div class="booking-card">
+                <h3 style="color: var(--text-white); margin-bottom: 1rem;">Pricing Details</h3>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
+                        <h4 style="color: var(--primary-color);">Private / Single Room</h4>
+                        <p style="font-size: 0.9rem; margin-top: 0.25rem;">Single bed, Balcony, Study Desk, Attached Bath</p>
+                        <div style="margin-top: 0.5rem; font-weight: 700; color: var(--text-white);">₹25,999/mo*</div>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--primary-color);">Twin Sharing Room</h4>
+                        <p style="font-size: 0.9rem; margin-top: 0.25rem;">Two beds, Study Desk, Wardrobe, Attached Bath</p>
+                        <div style="margin-top: 0.5rem; font-weight: 700; color: var(--text-white);">₹17,500/mo*</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Similar Properties -->
+    <section class="detail-container similar-properties">
+        <h2 class="section-title">Similar Properties</h2>
+        <div class="properties-grid" id="similarProperties">
+            <!-- Will be populated by JS or static for now -->
+             <div class="pg-card">
+                <div class="pg-card-content" style="flex-direction: column; padding: 0;">
+                    <div class="pg-image-container" style="width: 100%; height: 200px;">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&h=400&fit=crop" class="pg-carousel-image" alt="Kawasaki House">
+                        <div class="pg-status-banner filling-fast">
+                            <span>⏰</span> Filling Fast
+                        </div>
+                    </div>
+                    <div class="pg-details" style="padding: 1.5rem;">
+                        <h3 class="pg-title" style="font-size: 1.2rem;">Kawasaki House</h3>
+                        <p class="pg-location">📍 South Campus</p>
+                        <div class="pg-price" style="font-size: 1.1rem;">₹16,899/mo*</div>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="window.location.href='kawasaki-house.html'">View Details</button>
+                    </div>
+                </div>
+            </div>
+             <div class="pg-card">
+                <div class="pg-card-content" style="flex-direction: column; padding: 0;">
+                    <div class="pg-image-container" style="width: 100%; height: 200px;">
+                        <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&h=400&fit=crop" class="pg-carousel-image" alt="Okazaki House">
+                        <div class="pg-status-banner almost-full">
+                            <span>→</span> Almost Full
+                        </div>
+                    </div>
+                    <div class="pg-details" style="padding: 1.5rem;">
+                        <h3 class="pg-title" style="font-size: 1.2rem;">Okazaki House</h3>
+                        <p class="pg-location">📍 South Campus</p>
+                        <div class="pg-price" style="font-size: 1.1rem;">₹16,299/mo*</div>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="window.location.href='okazaki-house.html'">View Details</button>
+                    </div>
+                </div>
+            </div>
+             <div class="pg-card">
+                <div class="pg-card-content" style="flex-direction: column; padding: 0;">
+                    <div class="pg-image-container" style="width: 100%; height: 200px;">
+                        <img src="https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=600&h=400&fit=crop" class="pg-carousel-image" alt="Tokyo House">
+                        <div class="pg-status-banner filling-fast">
+                            <span>⏰</span> Filling Fast
+                        </div>
+                    </div>
+                    <div class="pg-details" style="padding: 1.5rem;">
+                        <h3 class="pg-title" style="font-size: 1.2rem;">Tokyo House</h3>
+                        <p class="pg-location">📍 East Campus</p>
+                        <div class="pg-price" style="font-size: 1.1rem;">₹15,999/mo*</div>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="window.location.href='tokyo-house.html'">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Simple Image Switcher
+        function changeImage(thumbnail, src) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+            thumbnail.classList.add('active');
+        }
+
+        // Mobile Nav Toggle (Reused)
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.querySelector('.nav-menu');
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
+

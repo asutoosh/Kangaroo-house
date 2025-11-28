@@ -1,8 +1,8 @@
 /* CSS Variables */
 :root {
-    --primary-color: #FF6D00; /* Vibrant Orange */
-    --primary-dark: #E65100; /* Darker Orange */
-    --primary-light: #FF9E80; /* Lighter Orange */
+    --primary-color: #a855f7; /* Violet */
+    --primary-dark: #9333ea; /* Darker Violet */
+    --primary-light: #c084fc; /* Lighter Violet */
     --bg-dark: #000000; /* Pure Black */
     --bg-white: #121212; /* Dark Gray for cards */
     --bg-light: #000000; /* Page Background */
@@ -633,7 +633,7 @@ body {
 .btn-primary:hover {
     background-color: var(--primary-dark);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(91, 181, 157, 0.3);
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
 }
 
 .btn-outline {
@@ -696,7 +696,7 @@ body {
     background: var(--primary-dark);
     transform: rotate(-45deg) scale(1.2);
     z-index: 1000;
-    box-shadow: 0 6px 20px rgba(91, 181, 157, 0.5);
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.5);
 }
 
 /* Leaflet Popup Styling */

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kangaroo House</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Page Specific Styles */
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .about-hero {
+            padding: 150px 2rem 80px;
+            text-align: center;
+        }
+
+        .about-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem 6rem;
+        }
+
+        /* Unblur Text Reveal Animation */
+        .reveal-text {
+            opacity: 0;
+            filter: blur(15px);
+            transform: translateY(30px);
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, filter, transform;
+        }
+
+        .reveal-visible {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0);
+        }
+
+        /* Content Styling */
+        h1.page-title {
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 900;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 1.5rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .value-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .value-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .journey-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .journey-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #ccc;
+        }
+
+        .journey-list li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Header (Copied structure) -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="../../index.html" class="logo">
+                <span class="logo-icon">🦘</span>
+                <span class="logo-text">KANGAROO HOUSE</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="../pg/PG.html">Pg</a></li>
+                    <li><a href="../../index.html#services">SERVICES</a></li>
+                    <li><a href="../../index.html#gallery">GALLERY</a></li>
+                    <li><a href="../../index.html#reviews">REVIEWS</a></li>
+                    <li><a href="../../index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <h1 class="page-title reveal-text">About Us</h1>
+    </section>
+
+    <main class="about-container">
+        <section class="intro reveal-text">
+            <h2>Welcome to Kangaroo Housing</h2>
+            <p>Your trusted home-away-from-home in the heart of Delhi.</p>
+            <p>What began as a small offline stay facility 3 years ago, built from the ground up with hard work, warmth, and genuine hospitality, has now grown into a full-fledged online booking platform dedicated to making your stay in Delhi simple, safe, and comfortable.</p>
+            <p>Over the years, we’ve hosted students, travellers, professionals, and families—each with their own story and journey. With every stay, our belief has grown stronger: a place to live should feel like more than just four walls. It should feel like care, comfort, and belonging.</p>
+        </section>
+
+        <section class="name-story reveal-text">
+            <h2>Why the Name “Kangaroo Housing”?</h2>
+            <p>People often ask us why we chose this name. The answer is simple—and meaningful.</p>
+            <p>Just like a kangaroo carries and protects her young in her pouch, offering warmth, safety, and comfort, we believe in caring for our guests in the same way.</p>
+            <p>Kangaroos symbolize warmth and guardianship—and that’s exactly the experience we aim to deliver.</p>
+            
+            <div class="values-grid">
+                <div class="value-card reveal-text">
+                    <h3>Protection</h3>
+                    <p>A safe and secure environment for everyone</p>
+                </div>
+                <div class="value-card reveal-text">
+                    <h3>Comfort</h3>
+                    <p>A cozy, homelike atmosphere to rest and recharge</p>
+                </div>
+                <div class="value-card reveal-text">
+                    <h3>Support</h3>
+                    <p>Helpful staff and services whenever you need them</p>
+                </div>
+                <div class="value-card reveal-text">
+                    <h3>Belonging</h3>
+                    <p>A place where you don’t feel like a visitor, but like family</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="journey reveal-text">
+            <h2>Our Journey</h2>
+            <ul class="journey-list">
+                <li>Started from the ground with just a few rooms and a big dream</li>
+                <li>Built through dedication, transparent service, and word-of-mouth trust</li>
+                <li>Serving Delhi’s guests for 3 years with consistent quality</li>
+                <li>Now expanding our reach through a modern online presence</li>
+                <li>Offering easier bookings, clearer information, and improved guest experiences</li>
+            </ul>
+        </section>
+
+        <section class="mission reveal-text">
+            <h2>Our Mission</h2>
+            <p>To make finding a stay in Delhi easy, affordable, and welcoming, where every guest feels valued and cared for—just like inside the safe pouch of a kangaroo.</p>
+        </section>
+
+        <section class="values reveal-text">
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card reveal-text">
+                    <h3>❤️ Hospitality First</h3>
+                    <p>Every guest deserves respect, warmth, and clean, comfortable spaces</p>
+                </div>
+                <div class="value-card reveal-text">
+                    <h3>🔒 Safety Always</h3>
+                    <p>Secure properties, verified staff, and 24/7 support</p>
+                </div>
+                <div class="value-card reveal-text">
+                    <h3>💼 Professional Service</h3>
+                    <p>Smooth check-ins, quick responses, and reliable management</p>
+                </div>
+                <div class="value-card reveal-text">
+                    <h3>✨ Continuous Improvement</h3>
+                    <p>Upgrading facilities and adopting modern technology to enhance comfort</p>
+                </div>
+                <div class="value-card reveal-text">
+                    <h3>🤝 Community & Trust</h3>
+                    <p>Treating guests, partners, and staff like members of one big family</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="conclusion reveal-text" style="margin-top: 4rem; text-align: center;">
+            <h2>Welcome to a New Way of Staying in Delhi</h2>
+            <p>Whether you’re here for studies, business, travel, or a short getaway, we’re here to offer you a peaceful, home-like experience—backed by years of genuine care and heartfelt service.</p>
+            <p class="highlight" style="font-size: 1.5rem; margin-top: 2rem;">Kangaroo Housing – Where Comfort Lives. Where You Belong.</p>
+        </section>
+    </main>
+
+    <!-- Footer (Copied structure) -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top-section">
+                <div class="footer-cta-text">
+                    <p class="footer-sub-label">✦ Contact Us</p>
+                    <h2>Interested in staying? <span class="text-gray">Book a visit, check our amenities or simply learn more?</span></h2>
+                </div>
+                
+                <div class="footer-right-wrapper">
+                    <div class="footer-nav-column">
+                        <nav class="footer-nav">
+                            <a href="../../index.html">Home</a>
+                            <a href="../pg/PG.html">PG</a>
+                            <a href="../amenities/amenities.html">Amenities</a>
+                            <a href="../../index.html#contact">Contact</a>
+                            <a href="#">About Us</a>
+                        </nav>
+                    </div>
+
+                    <div class="footer-contact-column">
+                        <p class="contact-label">Contact us at:</p>
+                        <a href="mailto:info@kangaroohouse.com" class="contact-link">
+                            info@kangaroohouse.com <span class="arrow-icon">↗</span>
+                        </a>
+                        <a href="tel:+919811670798" class="contact-link phone-link">
+                            +91 98116 70798
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-section">
+                <div class="footer-brand-large">
+                    <span class="brand-text-large">🦘 HOUSE</span>
+                </div>
+
+                <div class="footer-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d77.0688975472578!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1711654321000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="footer-legal">
+                <p>&copy; 2025 Kangaroo House. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Unblur Text Reveal Animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-visible');
+                        observer.unobserve(entry.target); // Only animate once
+                    }
+                });
+            }, observerOptions);
+
+            const revealElements = document.querySelectorAll('.reveal-text');
+            revealElements.forEach(el => observer.observe(el));
+        });
+
+        // Mobile Nav Toggle (Basic)
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

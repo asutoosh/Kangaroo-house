@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Sticky Header -->
@@ -24,8 +24,9 @@
                     <li><a href="#home">HOME</a></li>
                     <li><a href="pages\pg\PG.html">Pg</a></li>
                     <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="pages/about/gallery.html">GALLERY</a></li>
                     <li><a href="#reviews">REVIEWS</a></li>
+                    <li><a href="pages/about/about.html">ABOUT US</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
@@ -66,28 +67,30 @@
                     <span class="btn-arrow">→</span>
                 </a>
             </div>
-            <p class="hero-location">
-                <span class="hero-location-static">We've got comfortable rooms and great food</span><br>
-                <span class="hero-location-typing">near <span id="typed-location"></span></span>
-            </p>
-        </div>
-    </section>
-
-    <!-- Services Image Section with Zoom Effect -->
-    <section class="services-hero" id="services">
-        <div class="services-image-wrapper">
-            <img src="assets/Black pg near maharaha agarasen college.avif" alt="Kangaroo House PG Accommodation" class="services-image" id="servicesImage" onerror="this.src='Black pg near maharaha agarasen college.avif'">
+            <div class="hero-location-wrapper">
+                <span class="hero-location-static">We've got comfortable rooms and great food near</span>
+                <div class="rolling-text-mask">
+                    <ul class="rolling-text-list">
+                        <li>Maharaja Agrasen College</li>
+                        <li>Shaheed Rajguru College</li>
+                        <li>Drishti IAS</li>
+                        <li>Noida</li>
+                        <li>and way beyond.</li>
+                        <li>Maharaja Agrasen College</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Hostel / PG Services Section -->
     <section class="hostel-services">
-        <div class="hostel-services-header">
+        <div class="hostel-services-header reveal-on-scroll">
             <p>WHAT'S INCLUDED</p>
             <h3>Hostel Amenities Built For Student Life</h3>
         </div>
         <div class="hostel-services-grid">
-            <article class="hostel-service-card">
+            <article class="hostel-service-card reveal-on-scroll">
                 <div class="hostel-service-image">
                     <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/312021408.jpg?k=caffecc62d0698e7872ba1bb857dd2874e80c3a96ec22d8cbab87b0ed7a8c911&o=" alt="Private rooms at Kangaroo House" loading="lazy">
                 </div>
@@ -96,7 +99,7 @@
                     <p>Personal space with premium mattresses, study desks, and daily housekeeping.</p>
                 </div>
             </article>
-            <article class="hostel-service-card">
+            <article class="hostel-service-card reveal-on-scroll">
                 <div class="hostel-service-image">
                     <img src="https://webbox.imgix.net/images/ktqieiutuhfglztb/59d4978e-7190-480c-9838-951ec627e135.jpg?auto=format,compress&fit=crop&crop=entropy" alt="Shared rooms with friendly roommates" loading="lazy">
                 </div>
@@ -105,7 +108,7 @@
                     <p>Fully furnished twin & triple sharing rooms with smart storage and ventilation.</p>
                 </div>
             </article>
-            <article class="hostel-service-card">
+            <article class="hostel-service-card reveal-on-scroll">
                 <div class="hostel-service-image">
                     <img src="https://instasize.com/api/image/3d6ee1f71d86aa7c442e4020e4db6b0cce9345fef5724ae40b1d70d4e8c413f1.png" alt="Healthy meals for hostel residents" loading="lazy">
                 </div>
@@ -114,7 +117,7 @@
                     <p>Nutritious breakfast, lunch, dinner & midnight snacks with custom diet options.</p>
                 </div>
             </article>
-            <article class="hostel-service-card">
+            <article class="hostel-service-card reveal-on-scroll">
                 <div class="hostel-service-image">
                     <img src="https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGF1bmRyeXxlbnwwfHwwfHx8MA%3D%3D"" alt="Laundry and cleaning services" loading="lazy">
                 </div>
@@ -123,7 +126,7 @@
                     <p>Weekly laundry, ironing, and spotless common areas so you stay focused.</p>
                 </div>
             </article>
-            <article class="hostel-service-card">
+            <article class="hostel-service-card reveal-on-scroll">
                 <div class="hostel-service-image">
                     <img src="https://blackdiamondsecurity.co.uk/wp-content/uploads/2024/07/CCTV-Security-Systems-cctv-camera.jpg" alt="Security guards and CCTV" loading="lazy">
                 </div>
@@ -132,7 +135,7 @@
                     <p>Biometric entry, CCTV monitoring, and on-duty wardens for complete safety.</p>
                 </div>
             </article>
-            <article class="hostel-service-card">
+            <article class="hostel-service-card reveal-on-scroll">
                 <div class="hostel-service-image">
                     <img src="https://pasadena.edu/.ldp-images/.private_ldp/a141681/production/master/0e2f28b7-8c71-4a8e-a6cb-7a7e25d2a301.jpg" alt="High speed WiFi and study lounge" loading="lazy">
                 </div>
@@ -152,19 +155,22 @@
 
     <!-- Portfolio Section -->
     <section class="portfolio" id="gallery">
+        <div class="portfolio-bg">
+            <div class="portfolio-orb"></div>
+        </div>
         <div class="portfolio-header">
             <div class="portfolio-label">
                 <span class="label-square"></span>
                 <span class="label-text">OUR PORTFOLIO</span>
                 <span class="label-square"></span>
             </div>
-            <h2 class="portfolio-title">A LOOK AT WHAT<br>WE'VE NAILED</h2>
+            <h2 class="portfolio-title">TAKE A TOUR <br>OF OUR OPTIONS </h2>
             <div class="portfolio-cta">
                 <a href="pages\pg\PG.html" class="btn-portfolio">
                     <span>VIEW PROJECTS</span>
                     <span class="btn-portfolio-arrow">›</span>
                 </a>
-                <a href="#" class="btn-portfolio">
+                <a href="pages/about/gallery.html" class="btn-portfolio">
                     <span>VIEW GALLERY</span>
                     <span class="btn-portfolio-arrow">›</span>
                 </a>
@@ -205,6 +211,385 @@
         <div class="drag-indicator">
             <span class="drag-text">DRAG</span>
             <span class="drag-arrows">›››</span>
+        </div>
+    </section>
+
+    <!-- Reviews Section - Glassmorphism -->
+    <section class="reviews-section" id="reviews">
+        <div class="reviews-bg">
+            <div class="stars"></div>
+            <div class="planet-orb"></div>
+        </div>
+        
+        <div class="reviews-container">
+            <div class="reviews-header">
+                <span class="reviews-label">TESTIMONIALS</span>
+                <h2 class="reviews-title">
+                    <span class="gradient-text-reviews">What Our</span><br>
+                    <span class="gradient-text-reviews">Residents Say</span>
+                </h2>
+            </div>
+            
+            <div class="reviews-carousel-wrapper">
+                <div class="reviews-track" id="reviewsTrack">
+                    <!-- Review Card 1 -->
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="Kiran Natarajan" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Kiran Natarajan</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@kirannat • MAC Student</span>
+                            </div>
+                        </div>
+                        <p class="review-text">I was skeptical at first, but after staying here for a semester, I'm a believer! Not only is the food amazing, but I also made lifelong friends. Best PG near Maharaja Agrasen College!</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#KangarooHouse</span>
+                            <span class="review-date">10:15 AM · 3/22/25</span>
+                        </div>
+                    </article>
+
+                    <!-- Review Card 2 -->
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" alt="Priya Sharma" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Priya Sharma</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@priyasharma • Drishti IAS</span>
+                            </div>
+                        </div>
+                        <p class="review-text">As a UPSC aspirant, I needed a quiet place with good food. Kangaroo House exceeded all my expectations! The study lounge is perfect for late-night preparation. Highly recommended! 📚✨</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#UPSCPrep</span>
+                            <span class="review-date">8:30 PM · 4/15/25</span>
+                        </div>
+                    </article>
+
+                    <!-- Review Card 3 -->
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces" alt="Rahul Verma" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Rahul Verma</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@rahulv_du • DU Student</span>
+                            </div>
+                        </div>
+                        <p class="review-text">The 24/7 security and biometric entry give my parents complete peace of mind. Plus, the WiFi is blazing fast for my online classes! Best investment for my college life. 🔥</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#SafeStay</span>
+                            <span class="review-date">2:45 PM · 5/08/25</span>
+                        </div>
+                    </article>
+
+                    <!-- Review Card 4 -->
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces" alt="Ananya Singh" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Ananya Singh</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@ananyasingh • SRCC</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Moving from a small town, I was nervous about Delhi. But the staff here treats you like family! The homely food reminds me of mom's cooking. Thank you, Kangaroo House! 💕</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#HomeAwayFromHome</span>
+                            <span class="review-date">6:20 PM · 6/12/25</span>
+                        </div>
+                    </article>
+
+                    <!-- Review Card 5 -->
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=faces" alt="Vikram Patel" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Vikram Patel</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@vikrampatel • SRC Student</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Third year here and I can confidently say this is THE best PG near Shaheed Rajguru College. Clean rooms, great food, amazing crowd. Worth every rupee! 🙌</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#ThreeYearsStrong</span>
+                            <span class="review-date">11:00 AM · 7/20/25</span>
+                        </div>
+                    </article>
+
+                    <!-- Duplicate cards for infinite scroll -->
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="Kiran Natarajan" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Kiran Natarajan</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@kirannat • MAC Student</span>
+                            </div>
+                        </div>
+                        <p class="review-text">I was skeptical at first, but after staying here for a semester, I'm a believer! Not only is the food amazing, but I also made lifelong friends. Best PG near Maharaja Agrasen College!</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#KangarooHouse</span>
+                            <span class="review-date">10:15 AM · 3/22/25</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" alt="Priya Sharma" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Priya Sharma</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@priyasharma • Drishti IAS</span>
+                            </div>
+                        </div>
+                        <p class="review-text">As a UPSC aspirant, I needed a quiet place with good food. Kangaroo House exceeded all my expectations! The study lounge is perfect for late-night preparation. Highly recommended! 📚✨</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#UPSCPrep</span>
+                            <span class="review-date">8:30 PM · 4/15/25</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces" alt="Rahul Verma" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Rahul Verma</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@rahulv_du • DU Student</span>
+                            </div>
+                        </div>
+                        <p class="review-text">The 24/7 security and biometric entry give my parents complete peace of mind. Plus, the WiFi is blazing fast for my online classes! Best investment for my college life. 🔥</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#SafeStay</span>
+                            <span class="review-date">2:45 PM · 5/08/25</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces" alt="Ananya Singh" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Ananya Singh</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@ananyasingh • SRCC</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Moving from a small town, I was nervous about Delhi. But the staff here treats you like family! The homely food reminds me of mom's cooking. Thank you, Kangaroo House! 💕</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#HomeAwayFromHome</span>
+                            <span class="review-date">6:20 PM · 6/12/25</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=faces" alt="Vikram Patel" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Vikram Patel</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@vikrampatel • SRC Student</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Third year here and I can confidently say this is THE best PG near Shaheed Rajguru College. Clean rooms, great food, amazing crowd. Worth every rupee! 🙌</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#ThreeYearsStrong</span>
+                            <span class="review-date">11:00 AM · 7/20/25</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Mobile Reviews Wrapper (Visible on Mobile only) -->
+            <div class="mobile-reviews-carousel-wrapper">
+                <!-- Row 1: Moves Left to Right -->
+                <div class="mobile-reviews-track track-left-to-right">
+                    <!-- Card 1 -->
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="Kiran Natarajan" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Kiran Natarajan</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@kirannat • MAC Student</span>
+                            </div>
+                        </div>
+                        <p class="review-text">I was skeptical at first, but after staying here for a semester, I'm a believer! Not only is the food amazing, but I also made lifelong friends.</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#KangarooHouse</span>
+                            <span class="review-date">10:15 AM · 3/22/25</span>
+                        </div>
+                    </article>
+                    <!-- Card 2 -->
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" alt="Priya Sharma" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Priya Sharma</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@priyasharma • Drishti IAS</span>
+                            </div>
+                        </div>
+                        <p class="review-text">As a UPSC aspirant, I needed a quiet place with good food. Kangaroo House exceeded all my expectations! The study lounge is perfect.</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#UPSCPrep</span>
+                            <span class="review-date">8:30 PM · 4/15/25</span>
+                        </div>
+                    </article>
+                    <!-- Card 3 -->
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces" alt="Rahul Verma" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Rahul Verma</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@rahulv_du • DU Student</span>
+                            </div>
+                        </div>
+                        <p class="review-text">The 24/7 security and biometric entry give my parents complete peace of mind. Plus, the WiFi is blazing fast for my online classes!</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#SafeStay</span>
+                            <span class="review-date">2:45 PM · 5/08/25</span>
+                        </div>
+                    </article>
+                    <!-- Duplicates for loop -->
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="Kiran Natarajan" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Kiran Natarajan</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@kirannat • MAC Student</span>
+                            </div>
+                        </div>
+                        <p class="review-text">I was skeptical at first, but after staying here for a semester, I'm a believer! Not only is the food amazing, but I also made lifelong friends.</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#KangarooHouse</span>
+                            <span class="review-date">10:15 AM · 3/22/25</span>
+                        </div>
+                    </article>
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" alt="Priya Sharma" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Priya Sharma</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@priyasharma • Drishti IAS</span>
+                            </div>
+                        </div>
+                        <p class="review-text">As a UPSC aspirant, I needed a quiet place with good food. Kangaroo House exceeded all my expectations! The study lounge is perfect.</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#UPSCPrep</span>
+                            <span class="review-date">8:30 PM · 4/15/25</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Row 2: Moves Right to Left -->
+                <div class="mobile-reviews-track track-right-to-left">
+                    <!-- Card 4 -->
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces" alt="Ananya Singh" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Ananya Singh</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@ananyasingh • SRCC</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Moving from a small town, I was nervous about Delhi. But the staff here treats you like family! The homely food reminds me of mom's cooking.</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#HomeAwayFromHome</span>
+                            <span class="review-date">6:20 PM · 6/12/25</span>
+                        </div>
+                    </article>
+                    <!-- Card 5 -->
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=faces" alt="Vikram Patel" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Vikram Patel</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@vikrampatel • SRC Student</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Third year here and I can confidently say this is THE best PG near Shaheed Rajguru College. Clean rooms, great food, amazing crowd.</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#ThreeYearsStrong</span>
+                            <span class="review-date">11:00 AM · 7/20/25</span>
+                        </div>
+                    </article>
+                    <!-- Duplicates for loop -->
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces" alt="Ananya Singh" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Ananya Singh</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@ananyasingh • SRCC</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Moving from a small town, I was nervous about Delhi. But the staff here treats you like family! The homely food reminds me of mom's cooking.</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#HomeAwayFromHome</span>
+                            <span class="review-date">6:20 PM · 6/12/25</span>
+                        </div>
+                    </article>
+                    <article class="review-card glass-card">
+                        <div class="review-header">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=faces" alt="Vikram Patel" class="review-avatar">
+                            <div class="review-author">
+                                <div class="author-name">
+                                    <span>Vikram Patel</span>
+                                    <svg class="verified-badge" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <span class="author-handle">@vikrampatel • SRC Student</span>
+                            </div>
+                        </div>
+                        <p class="review-text">Third year here and I can confidently say this is THE best PG near Shaheed Rajguru College. Clean rooms, great food, amazing crowd.</p>
+                        <div class="review-footer">
+                            <span class="review-hashtag">#ThreeYearsStrong</span>
+                            <span class="review-date">11:00 AM · 7/20/25</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -268,9 +653,73 @@
                 <span class="gradient-text">journey today!</span>
             </h2>
             <p class="cta-subtitle">Join the Kangaroo House family without wasting any more time!</p>
-            <a href="pages\pg\PG.html" class="cta-button">Get Started Now</a>
+            <a href="pages/pg/PG.html" class="cta-button">Get Started Now</a>
         </div>
     </section>
+
+    <!-- New Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Top Row: Text Left | Nav & Contact Right -->
+            <div class="footer-top-section">
+                <div class="footer-cta-text">
+                    <p class="footer-sub-label">✦ Contact Us</p>
+                    <h2>Interested in staying? <span class="text-gray">Book a visit, check our amenities or simply learn more?</span></h2>
+                </div>
+                
+                <div class="footer-right-wrapper">
+                    <div class="footer-nav-column">
+                        <nav class="footer-nav">
+                            <a href="#home">Home</a>
+                            <a href="pages/pg/PG.html">PG</a>
+                            <a href="pages/amenities/amenities.html">Amenities</a>
+                            <a href="#contact">Contact</a>
+                            <a href="pages/about/about.html">About Us</a>
+                        </nav>
+                    </div>
+
+                    <div class="footer-contact-column">
+                        <p class="contact-label">Contact us at:</p>
+                        <a href="mailto:info@kangaroohouse.com" class="contact-link">
+                            info@kangaroohouse.com <span class="arrow-icon">↗</span>
+                        </a>
+                        <a href="tel:+919811670798" class="contact-link phone-link">
+                            +91 98116 70798
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Row: Logo Left | Map Right -->
+            <div class="footer-bottom-section">
+                <div class="footer-brand-large">
+                    <span class="brand-text-large">🦘 HOUSE</span>
+                </div>
+
+                <div class="footer-map">
+                    <!-- Google Map Embed for Delhi -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d77.0688975472578!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1711654321000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="footer-legal">
+                <p>&copy; 2025 Kangaroo House. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

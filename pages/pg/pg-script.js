@@ -255,7 +255,7 @@ function renderPGCards() {
                             Starts from ₹${property.price.toLocaleString('en-IN')}/mo*
                         </div>
                         <div class="pg-actions">
-                            <button class="btn btn-primary" onclick="window.location.href='kawasaki-house.html'">Take a look</button>
+                            <button class="btn btn-primary" onclick="window.location.href='${property.title.toLowerCase().replace(' ', '-')}.html'">Take a look</button>
                             <button class="btn btn-outline">REQUEST A CALLBACK</button>
                         </div>
                     </div>
