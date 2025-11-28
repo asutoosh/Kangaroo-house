@@ -34,6 +34,7 @@ body {
     color: var(--text-dark);
     background-color: var(--bg-light); /* Black */
     overflow-x: hidden;
+    width: 100%;
 }
 
 /* Header Styles */
@@ -784,7 +785,7 @@ body {
     }
 
     .header-container {
-        padding: 1rem 1.5rem;
+        padding: 1rem;
     }
 
     .nav-menu {

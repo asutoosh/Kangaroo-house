@@ -367,17 +367,21 @@ body {
 
 .hostel-service-image {
     width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* 4:3 aspect ratio (3/4 = 75%) */
     overflow: hidden;
     flex-shrink: 0;
     position: relative;
 }
 
 .hostel-service-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.4s ease;
-    position: relative;
     display: block;
 }
 
@@ -399,6 +403,42 @@ body {
     color: var(--text-light, #4b5563);
     line-height: 1.7;
     font-size: 0.98rem;
+}
+
+.hostel-services-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.btn-view-amenities {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: var(--text-dark, #0f172a);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.2);
+}
+
+.btn-view-amenities:hover {
+    background: #1e293b;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.3);
+}
+
+.btn-amenities-arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-view-amenities:hover .btn-amenities-arrow {
+    transform: translateX(4px);
 }
 
 /* Responsive Design */
@@ -519,40 +559,54 @@ body {
         padding: 3rem 0;
     }
 
+    /* Horizontal Carousel for Mobile */
     .hostel-services-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: row;
         gap: 1rem;
         padding: 0 1rem;
+        padding-bottom: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
 
-    /* Horizontal Card Layout for Mobile */
+    .hostel-services-grid::-webkit-scrollbar {
+        display: none;
+    }
+
     .hostel-service-card {
-        min-height: 140px; /* Fixed height for consistency */
-        flex-direction: row; /* Horizontal layout */
-        align-items: stretch;
-        padding: 0;
+        flex: 0 0 280px;
+        min-width: 280px;
+        flex-direction: column;
+        scroll-snap-align: start;
+        border-radius: 12px;
     }
 
     .hostel-service-image {
-        flex: 0 0 40%;
-        width: 40%;
-        height: auto;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75%; /* 4:3 aspect ratio */
+        position: relative;
         overflow: hidden;
     }
 
     .hostel-service-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: auto;
-        object-fit: contain;
+        height: 100%;
+        object-fit: cover;
     }
 
     .hostel-service-content {
-        flex: 0 0 60%;
-        width: 60%;
         padding: 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         text-align: left;
         background: #f7f7f7;
     }
@@ -570,6 +624,15 @@ body {
         line-height: 1.4;
         color: #4b5563;
         display: block;
+    }
+
+    .hostel-services-cta {
+        margin-top: 2rem;
+    }
+
+    .btn-view-amenities {
+        padding: 0.875rem 1.75rem;
+        font-size: 0.95rem;
     }
 }
 
@@ -626,9 +689,24 @@ body {
         padding: 1.25rem 0;
     }
 
+    /* Smaller carousel cards on small screens */
     .hostel-services-grid {
         gap: 0.75rem;
         padding: 0 1rem;
+    }
+
+    .hostel-service-card {
+        flex: 0 0 240px;
+        min-width: 240px;
+    }
+
+    .hostel-services-cta {
+        margin-top: 1.5rem;
+    }
+
+    .btn-view-amenities {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
     }
 
     .services-image-wrapper {
@@ -643,55 +721,668 @@ body {
         transform: scale(0.7) translateY(0);
     }
 
-    .hostel-service-card {
-        flex-direction: column !important;
-        padding: 0 !important;
-        border-radius: 16px !important;
-        overflow: visible !important;
-        min-height: auto !important;
-    }
-
     .hostel-service-image {
-        width: 100% !important;
-        height: auto !important;
-        flex: none !important;
-        flex-shrink: 0 !important;
-        overflow: hidden !important;
-        position: relative !important;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75%; /* 4:3 aspect ratio */
+        position: relative;
     }
 
     .hostel-service-image img {
-        width: 100% !important;
-        height: auto !important;
-        object-fit: contain !important;
-        display: block !important;
-        position: relative !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .hostel-service-content {
-        width: 100% !important;
-        padding: 1rem 1.2rem 1.5rem !important;
-        display: block !important;
-        text-align: left !important;
-        flex: none !important;
-        background: #f7f7f7 !important;
+        width: 100%;
+        padding: 0.875rem;
+        text-align: left;
+        background: #f7f7f7;
     }
     
     .hostel-service-content h4 {
-        font-size: 1.05rem !important;
-        margin-bottom: 0.45rem !important;
-        color: #000000 !important;
-        display: block !important;
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+        color: #000000;
     }
 
     .hostel-service-content p {
-        font-size: 0.85rem !important;
-        line-height: 1.45 !important;
-        color: #4b5563 !important;
-        display: block !important;
-        overflow: visible !important;
-        -webkit-line-clamp: unset !important;
-        -webkit-box-orient: unset !important;
+        font-size: 0.8rem;
+        line-height: 1.4;
+        color: #4b5563;
+    }
+}
+
+/* ========================================
+   Portfolio Section - 3D Infinite Carousel
+   ======================================== */
+
+.portfolio {
+    background: #f5f5f5;
+    padding: 5rem 0 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-header {
+    text-align: center;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.label-square {
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    display: inline-block;
+}
+
+.label-text {
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--text-dark);
+    text-transform: uppercase;
+}
+
+.portfolio-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--text-dark);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.portfolio-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-portfolio {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.75rem;
+    background: var(--bg-dark);
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-portfolio:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.btn-portfolio-arrow {
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-portfolio:hover .btn-portfolio-arrow {
+    transform: translateX(4px);
+}
+
+/* Carousel Wrapper */
+.portfolio-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0 2rem;
+    perspective: 1000px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.portfolio-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    transform: rotateX(8deg);
+    transform-origin: center bottom;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    animation: scrollCarousel 40s linear infinite;
+    will-change: transform;
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollCarousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.carousel-item {
+    flex-shrink: 0;
+    width: 320px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 
+        0 20px 50px rgba(0, 0, 0, 0.2),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform-style: preserve-3d;
+    position: relative;
+    background: #fff;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.25));
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.carousel-item:hover::before {
+    opacity: 1;
+}
+
+.carousel-item:hover {
+    transform: scale(1.08) translateY(-12px) rotateX(-5deg);
+    box-shadow: 
+        0 35px 70px rgba(0, 0, 0, 0.3),
+        0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 3D Curve Effect - Bottom fade and shadow */
+.carousel-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top, #f5f5f5 0%, rgba(245, 245, 245, 0.8) 40%, transparent 100%);
+    pointer-events: none;
+    z-index: 3;
+}
+
+/* Drag Indicator */
+.drag-indicator {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    z-index: 10;
+}
+
+.drag-arrows {
+    color: var(--primary-color);
+    font-weight: 900;
+    animation: pulseArrows 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseArrows {
+    0%, 100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 0.6;
+        transform: translateX(3px);
+    }
+}
+
+/* 3D Perspective Transform for Items - Top fade */
+.portfolio-carousel-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, 
+        #f5f5f5 0%, 
+        rgba(245, 245, 245, 0.5) 50%,
+        transparent 100%
+    );
+    z-index: 4;
+    pointer-events: none;
+}
+
+/* Curved shadow at bottom - creates the floor effect */
+.portfolio-carousel-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    height: 120px;
+    background: radial-gradient(ellipse 100% 40% at center, rgba(0,0,0,0.18) 0%, transparent 70%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* ========================================
+   Portfolio Responsive Styles
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .carousel-item {
+        width: 280px;
+        height: 190px;
+    }
+    
+    .portfolio-title {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+    
+    .portfolio-carousel {
+        transform: rotateX(6deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 3rem 0 0;
+    }
+    
+    .portfolio-header {
+        margin-bottom: 2rem;
+    }
+    
+    .portfolio-title {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+    
+    .portfolio-cta {
+        flex-direction: row;
+        gap: 0.75rem;
+    }
+    
+    .btn-portfolio {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.7rem;
+    }
+    
+    .carousel-item {
+        width: 220px;
+        height: 160px;
+    }
+    
+    .carousel-track {
+        gap: 1rem;
+        padding: 1.5rem 0;
+    }
+    
+    .drag-indicator {
+        display: none;
+    }
+    
+    .portfolio-carousel-wrapper {
+        padding: 2rem 0 1rem;
+    }
+    
+    .portfolio-carousel {
+        transform: rotateX(5deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio {
+        padding: 2.5rem 0 0;
+    }
+    
+    .portfolio-header {
+        padding: 0 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .portfolio-label {
+        margin-bottom: 1rem;
+    }
+    
+    .label-square {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .label-text {
+        font-size: 0.75rem;
+        letter-spacing: 0.12em;
+    }
+    
+    .portfolio-title {
+        font-size: 1.65rem;
+        line-height: 1.15;
+    }
+    
+    .portfolio-cta {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .btn-portfolio {
+        width: auto;
+        max-width: none;
+        justify-content: center;
+        padding: 0.7rem 0.9rem;
+        font-size: 0.65rem;
+        gap: 0.5rem;
+    }
+    
+    .btn-portfolio-arrow {
+        font-size: 1rem;
+    }
+    
+    .carousel-item {
+        width: 180px;
+        height: 130px;
+        border-radius: 8px;
+    }
+    
+    .carousel-track {
+        gap: 0.85rem;
+        animation-duration: 28s;
+        padding: 1rem 0;
+    }
+    
+    .portfolio-carousel-wrapper {
+        padding: 1.5rem 0 1rem;
+    }
+    
+    .portfolio-carousel {
+        transform: rotateX(4deg);
+    }
+    
+    .portfolio-carousel-wrapper::before {
+        height: 60px;
+    }
+    
+    .portfolio-carousel-wrapper::after {
+        bottom: 20px;
+        height: 80px;
+        width: 90%;
+    }
+    
+    .carousel-curve {
+        height: 80px;
+    }
+}
+
+/* ========================================
+   FAQ Section
+   ======================================== */
+
+.faq-section {
+    background: var(--bg-dark);
+    padding: 6rem 2rem;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 3.5rem;
+    font-style: italic;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #4ade80 0%, #22d3ee 50%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    color: var(--text-white);
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.faq-question span:first-child {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.6);
+    transition: transform 0.3s ease, color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+    color: #4ade80;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+}
+
+.faq-answer p {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ========================================
+   CTA Section
+   ======================================== */
+
+.cta-section {
+    background: var(--bg-dark);
+    padding: 5rem 2rem 6rem;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+    font-style: italic;
+}
+
+.cta-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    font-style: italic;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.25rem;
+    background: linear-gradient(135deg, #4ade80 0%, #22d3ee 100%);
+    color: var(--bg-dark);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(74, 222, 128, 0.25);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(74, 222, 128, 0.35);
+}
+
+/* ========================================
+   FAQ & CTA Responsive Styles
+   ======================================== */
+
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 4rem 1.5rem;
+    }
+    
+    .faq-title {
+        margin-bottom: 2.5rem;
+    }
+    
+    .faq-question {
+        padding: 1rem 1.25rem;
+        font-size: 0.95rem;
+    }
+    
+    .faq-answer p {
+        padding: 0 1.25rem 1.25rem 1.25rem;
+        font-size: 0.9rem;
+    }
+    
+    .cta-section {
+        padding: 3.5rem 1.5rem 4.5rem;
+    }
+    
+    .cta-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-section {
+        padding: 3rem 1rem;
+    }
+    
+    .faq-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .faq-list {
+        gap: 0.5rem;
+    }
+    
+    .faq-question {
+        padding: 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .faq-icon {
+        font-size: 1.25rem;
+    }
+    
+    .faq-answer p {
+        padding: 0 1rem 1rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .cta-section {
+        padding: 2.5rem 1rem 3.5rem;
+    }
+    
+    .cta-title {
+        font-size: 2rem;
+    }
+    
+    .cta-subtitle {
+        font-size: 0.875rem;
+        margin-bottom: 1.75rem;
+    }
+    
+    .cta-button {
+        padding: 0.875rem 2rem;
+        font-size: 0.85rem;
     }
 }
 

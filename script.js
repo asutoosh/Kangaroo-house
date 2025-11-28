@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+
 // Image Zoom Out and Move Up Effect on Scroll
 const servicesImage = document.getElementById('servicesImage');
 const servicesHero = document.querySelector('.services-hero');
@@ -130,4 +131,188 @@ if (servicesImage && servicesHero) {
         }
     }, { passive: true });
 }
+
+// ========================================
+// Portfolio Infinite Carousel
+// ========================================
+
+document.addEventListener('DOMContentLoaded', () => {
+    const carouselTrack = document.getElementById('carouselTrack');
+    
+    if (carouselTrack) {
+        // Get all original items
+        const originalItems = carouselTrack.querySelectorAll('.carousel-item');
+        
+        // Clone items multiple times for seamless infinite scroll
+        // We need enough clones so that when scrolling, there's always content visible
+        const cloneSets = 3; // Number of times to duplicate the entire set
+        
+        for (let i = 0; i < cloneSets; i++) {
+            originalItems.forEach(item => {
+                const clone = item.cloneNode(true);
+                carouselTrack.appendChild(clone);
+            });
+        }
+        
+        // Add drag functionality for desktop
+        let isDragging = false;
+        let startX;
+        let scrollLeft;
+        let animationPaused = false;
+        
+        const carousel = document.getElementById('portfolioCarousel');
+        
+        if (carousel) {
+            // Mouse events for drag scrolling
+            carousel.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                carousel.style.cursor = 'grabbing';
+                startX = e.pageX - carousel.offsetLeft;
+                scrollLeft = carousel.scrollLeft;
+                
+                // Pause animation while dragging
+                carouselTrack.style.animationPlayState = 'paused';
+                animationPaused = true;
+            });
+            
+            carousel.addEventListener('mouseleave', () => {
+                if (isDragging) {
+                    isDragging = false;
+                    carousel.style.cursor = 'grab';
+                    
+                    // Resume animation after a delay
+                    setTimeout(() => {
+                        if (!isDragging) {
+                            carouselTrack.style.animationPlayState = 'running';
+                            animationPaused = false;
+                        }
+                    }, 1000);
+                }
+            });
+            
+            carousel.addEventListener('mouseup', () => {
+                isDragging = false;
+                carousel.style.cursor = 'grab';
+                
+                // Resume animation after a delay
+                setTimeout(() => {
+                    if (!isDragging) {
+                        carouselTrack.style.animationPlayState = 'running';
+                        animationPaused = false;
+                    }
+                }, 1000);
+            });
+            
+            carousel.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                e.preventDefault();
+                const x = e.pageX - carousel.offsetLeft;
+                const walk = (x - startX) * 2; // Scroll speed multiplier
+                carousel.scrollLeft = scrollLeft - walk;
+            });
+            
+            // Touch events for mobile
+            carousel.addEventListener('touchstart', (e) => {
+                isDragging = true;
+                startX = e.touches[0].pageX - carousel.offsetLeft;
+                scrollLeft = carousel.scrollLeft;
+                carouselTrack.style.animationPlayState = 'paused';
+            }, { passive: true });
+            
+            carousel.addEventListener('touchend', () => {
+                isDragging = false;
+                setTimeout(() => {
+                    if (!isDragging) {
+                        carouselTrack.style.animationPlayState = 'running';
+                    }
+                }, 1000);
+            });
+            
+            carousel.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                const x = e.touches[0].pageX - carousel.offsetLeft;
+                const walk = (x - startX) * 1.5;
+                carousel.scrollLeft = scrollLeft - walk;
+            }, { passive: true });
+            
+            // Set initial cursor style
+            carousel.style.cursor = 'grab';
+        }
+        
+        // Apply 3D perspective effect to items based on their position
+        function apply3DEffect() {
+            const items = carouselTrack.querySelectorAll('.carousel-item');
+            const carouselRect = carousel.getBoundingClientRect();
+            const centerX = carouselRect.left + carouselRect.width / 2;
+            
+            items.forEach(item => {
+                const itemRect = item.getBoundingClientRect();
+                const itemCenterX = itemRect.left + itemRect.width / 2;
+                const distanceFromCenter = (itemCenterX - centerX) / (carouselRect.width / 2);
+                
+                // Calculate rotation and scale based on distance from center
+                const rotateY = distanceFromCenter * 25; // Max 25 degrees rotation
+                const scale = 1 - Math.abs(distanceFromCenter) * 0.15; // Scale down items further from center
+                const translateZ = -Math.abs(distanceFromCenter) * 50; // Push back items further from center
+                
+                item.style.transform = `
+                    perspective(1000px) 
+                    rotateY(${rotateY}deg) 
+                    scale(${Math.max(0.75, scale)}) 
+                    translateZ(${translateZ}px)
+                `;
+                item.style.opacity = 1 - Math.abs(distanceFromCenter) * 0.3;
+            });
+        }
+        
+        // Apply 3D effect on scroll and animation
+        let rafId;
+        function updateCarousel() {
+            apply3DEffect();
+            rafId = requestAnimationFrame(updateCarousel);
+        }
+        
+        // Start the 3D effect loop
+        updateCarousel();
+        
+        // Pause animation when page is not visible
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                carouselTrack.style.animationPlayState = 'paused';
+                cancelAnimationFrame(rafId);
+            } else {
+                carouselTrack.style.animationPlayState = 'running';
+                updateCarousel();
+            }
+        });
+    }
+});
+
+// ========================================
+// FAQ Accordion
+// ========================================
+
+document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all other items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                }
+            });
+            
+            // Toggle current item
+            item.classList.toggle('active');
+            question.setAttribute('aria-expanded', !isActive);
+        });
+    });
+});
 
