@@ -21,12 +21,12 @@ if (navToggle && navMenu) {
 const properties = [
     {
         id: 1,
-        title: 'Kawasaki House',
-        location: 'South Campus',
-        gender: 'Male',
-        distance: '11.5 km away from Delhi Apartments',
-        lat: 28.6139,
-        lng: 77.2090,
+        title: 'Sanvi Girls PG',
+        location: 'Near Ashok Nagar, Delhi',
+        gender: 'Female',
+        distance: 'Near Maharaja Agrasen College, Ashok Nagar',
+        lat: 28.6328,
+        lng: 77.2853,
         price: 16899,
         images: [
             'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&h=400&fit=crop',
@@ -41,12 +41,12 @@ const properties = [
     },
     {
         id: 2,
-        title: 'Okazaki House',
-        location: 'South Campus',
+        title: 'Krishna Boys PG',
+        location: 'Near Ashok Nagar, Delhi',
         gender: 'Male',
-        distance: '11.5 km away from Delhi Apartments',
-        lat: 28.6249,
-        lng: 77.2190,
+        distance: 'Near Maharaja Agrasen College, Ashok Nagar',
+        lat: 28.6315,
+        lng: 77.2867,
         price: 16299,
         images: [
             'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&h=400&fit=crop',
@@ -61,12 +61,12 @@ const properties = [
     },
     {
         id: 3,
-        title: 'Kobe House',
-        location: 'North Campus',
+        title: 'Swami Vivekanand PG',
+        location: 'Vasundhara Enclave, Delhi',
         gender: 'Female',
-        distance: '8.5 km away from Delhi Apartments',
-        lat: 28.7041,
-        lng: 77.1025,
+        distance: 'Near Vasundhara Enclave Metro, Delhi',
+        lat: 28.6097,
+        lng: 77.3203,
         price: 17500,
         images: [
             'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&h=400&fit=crop',
@@ -81,12 +81,12 @@ const properties = [
     },
     {
         id: 4,
-        title: 'Tokyo House',
-        location: 'East Campus',
+        title: 'Balaji PG',
+        location: 'Near Ashok Nagar, Delhi',
         gender: 'Unisex',
-        distance: '9.2 km away from Delhi Apartments',
-        lat: 28.5355,
-        lng: 77.3910,
+        distance: 'Near Maharaja Agrasen College, Ashok Nagar',
+        lat: 28.6340,
+        lng: 77.2880,
         price: 15999,
         images: [
             'https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=600&h=400&fit=crop',
@@ -101,12 +101,12 @@ const properties = [
     },
     {
         id: 5,
-        title: 'Osaka House',
-        location: 'West Campus',
-        gender: 'Male',
-        distance: '12.3 km away from Delhi Apartments',
-        lat: 28.6800,
-        lng: 77.0689,
+        title: 'Lakshmi Girls PG',
+        location: 'Vasundhara Enclave, Delhi',
+        gender: 'Female',
+        distance: 'Near Vasundhara Enclave Metro, Delhi',
+        lat: 28.6110,
+        lng: 77.3190,
         price: 14899,
         images: [
             'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop',
@@ -255,7 +255,7 @@ function renderPGCards() {
                             Starts from ₹${property.price.toLocaleString('en-IN')}/mo*
                         </div>
                         <div class="pg-actions">
-                            <button class="btn btn-primary" onclick="window.location.href='${property.title.toLowerCase().replace(' ', '-')}.html'">Take a look</button>
+                            <button class="btn btn-primary" onclick="window.location.href='${property.title.toLowerCase().replace(/ /g, '-')}.html'">Take a look</button>
                             <button class="btn btn-outline">REQUEST A CALLBACK</button>
                         </div>
                     </div>

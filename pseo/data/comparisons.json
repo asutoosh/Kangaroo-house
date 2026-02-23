@@ -1,0 +1,86 @@
+[
+  {
+    "id": "pg-vs-hostel",
+    "slug": "pg-vs-hostel-which-is-better",
+    "title": "PG vs Hostel: Which is Better for Students in Delhi?",
+    "entity_a": {"name": "PG (Paying Guest)", "type": "accommodation"},
+    "entity_b": {"name": "Hostel", "type": "accommodation"},
+    "introduction": "Choosing between a PG and a hostel is one of the first decisions students face when moving to Delhi. Both have their advantages, but the right choice depends on your budget, lifestyle preferences, and priorities.",
+    "features": [
+      {"feature": "Room Size", "a": "Spacious (120-200 sq ft)", "b": "Dormitory style (60-100 sq ft)", "winner": "a"},
+      {"feature": "Meals", "a": "Home-cooked, 4 times/day", "b": "Canteen-style, 3 times/day", "winner": "a"},
+      {"feature": "Privacy", "a": "Single/twin rooms available", "b": "Shared dorms, common bathrooms", "winner": "a"},
+      {"feature": "Cost", "a": "₹8,000-25,000/mo (all-inclusive)", "b": "₹5,000-15,000/mo (meals extra)", "winner": "b"},
+      {"feature": "Safety", "a": "CCTV, security guard, verified", "b": "Basic security, varies", "winner": "a"},
+      {"feature": "WiFi", "a": "High-speed in rooms", "b": "Shared, often slow", "winner": "a"},
+      {"feature": "Rules", "a": "Moderate, flexible timings", "b": "Strict curfew (college hostels)", "winner": "a"},
+      {"feature": "Housekeeping", "a": "Regular cleaning & laundry", "b": "Limited, self-managed", "winner": "a"}
+    ],
+    "verdict": "For most students in Delhi, a well-managed PG offers significantly better value. While hostels are cheaper, PGs provide better food, more privacy, superior safety, and a home-like environment.",
+    "best_for_a": "Students wanting comfort, privacy, good food, and a home-like experience",
+    "best_for_b": "Budget-conscious students okay with dormitory living",
+    "keywords": ["PG vs hostel", "hostel or PG which is better", "PG vs hostel for students Delhi"]
+  },
+  {
+    "id": "pg-vs-flat",
+    "slug": "pg-vs-flat-which-is-better",
+    "title": "PG vs Flat: Which Should You Choose in Delhi?",
+    "entity_a": {"name": "PG (Paying Guest)", "type": "accommodation"},
+    "entity_b": {"name": "Independent Flat/Room", "type": "accommodation"},
+    "introduction": "Should you rent a flat or move into a PG? While a flat offers independence, a PG offers convenience. Let's break down the real costs and benefits.",
+    "features": [
+      {"feature": "Monthly Cost", "a": "₹8,000-25,000 (all inclusive)", "b": "₹10,000-20,000 rent + ₹5,000-8,000 expenses", "winner": "a"},
+      {"feature": "Setup Cost", "a": "Zero — move in with suitcase", "b": "₹30,000-80,000 (furniture, utensils)", "winner": "a"},
+      {"feature": "Meals", "a": "4 meals/day included", "b": "Cook yourself or order (₹5,000-10,000/mo)", "winner": "a"},
+      {"feature": "Privacy", "a": "Good (single rooms available)", "b": "Complete", "winner": "b"},
+      {"feature": "Freedom", "a": "Some house rules", "b": "Complete freedom", "winner": "b"},
+      {"feature": "Maintenance", "a": "Zero — fully managed", "b": "You handle everything", "winner": "a"},
+      {"feature": "Minimum Stay", "a": "1-3 months", "b": "6-12 months lease", "winner": "a"},
+      {"feature": "Time Saved", "a": "3+ hours/day", "b": "Significant time on chores", "winner": "a"}
+    ],
+    "verdict": "PGs win on total cost, convenience, and time savings. When you add up rent, groceries, gas, maid, WiFi, electricity, and water, a flat costs 40-60% more than a PG.",
+    "best_for_a": "Students, young professionals who value convenience",
+    "best_for_b": "Couples, families, or individuals needing complete independence",
+    "keywords": ["PG vs flat Delhi", "PG or flat which is cheaper", "renting flat vs PG"]
+  },
+  {
+    "id": "pg-vs-coliving",
+    "slug": "pg-vs-coliving-which-is-better",
+    "title": "PG vs Coliving: What's the Real Difference?",
+    "entity_a": {"name": "PG (Paying Guest)", "type": "accommodation"},
+    "entity_b": {"name": "Coliving Space", "type": "accommodation"},
+    "introduction": "Coliving is marketed as the modern, premium alternative to PGs. But is it worth the premium price? This comparison finds out.",
+    "features": [
+      {"feature": "Monthly Cost", "a": "₹8,000-25,000/mo", "b": "₹12,000-40,000/mo", "winner": "a"},
+      {"feature": "Room Quality", "a": "Well-furnished, comfortable", "b": "Designer interiors", "winner": "b"},
+      {"feature": "Meals", "a": "Home-cooked, 4 times/day", "b": "Café-style, sometimes outsourced", "winner": "a"},
+      {"feature": "Technology", "a": "Basic management", "b": "App-based everything", "winner": "b"},
+      {"feature": "Personal Touch", "a": "Owner-managed, personal", "b": "Corporate, standardised", "winner": "a"},
+      {"feature": "Flexibility", "a": "Flexible terms, negotiable", "b": "Fixed plans", "winner": "a"},
+      {"feature": "Value for Money", "a": "Excellent", "b": "Paying premium for aesthetics", "winner": "a"}
+    ],
+    "verdict": "PGs win on value. Coliving spaces look great but cost 30-60% more for the same core services. A well-managed PG offers everything coliving does — minus designer aesthetics — at a fraction of the cost.",
+    "best_for_a": "Budget-conscious students and professionals who prioritise value",
+    "best_for_b": "Young professionals with higher budgets who value aesthetics",
+    "keywords": ["PG vs coliving", "coliving vs paying guest", "is coliving better than PG"]
+  },
+  {
+    "id": "girls-pg-vs-boys-pg",
+    "slug": "girls-pg-vs-boys-pg-differences",
+    "title": "Girls PG vs Boys PG: Key Differences & What to Expect",
+    "entity_a": {"name": "Girls PG", "type": "accommodation"},
+    "entity_b": {"name": "Boys PG", "type": "accommodation"},
+    "introduction": "Girls PGs and boys PGs differ in rules, security, amenities, and pricing. Understanding these differences helps you set expectations.",
+    "features": [
+      {"feature": "Security Level", "a": "Very high — CCTV, female staff", "b": "Standard — CCTV, guard", "winner": "a"},
+      {"feature": "Rules & Curfew", "a": "Stricter, guest restrictions", "b": "More relaxed", "winner": "tie"},
+      {"feature": "Cleanliness", "a": "Higher standards", "b": "Good with housekeeping", "winner": "a"},
+      {"feature": "Pricing", "a": "₹8,000-28,000/mo", "b": "₹7,000-24,000/mo", "winner": "b"},
+      {"feature": "Availability", "a": "High demand, book early", "b": "Easier to find", "winner": "b"}
+    ],
+    "verdict": "Girls PGs offer higher security and cleanliness but come with stricter rules and slightly higher prices. Boys PGs are more relaxed and cheaper. Kangaroo House maintains excellent standards regardless of gender.",
+    "best_for_a": "Female students and working women who prioritise safety",
+    "best_for_b": "Male students and working men who want flexible rules",
+    "keywords": ["girls PG vs boys PG", "difference between girls and boys PG"]
+  }
+]

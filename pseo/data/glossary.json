@@ -1,0 +1,162 @@
+[
+  {
+    "id": "paying-guest",
+    "term": "Paying Guest (PG)",
+    "slug": "what-is-a-paying-guest",
+    "short_definition": "A Paying Guest (PG) is a renter who lives in someone else's home or a managed residential property, typically with meals and basic services included in the rent.",
+    "detailed_explanation": "The PG accommodation model originated in India as a way for homeowners to rent out spare rooms to students and professionals. Unlike traditional renting, PG arrangements typically include furnished rooms, daily meals, housekeeping, and utilities in a single monthly payment. Today, professional PG operators like Kangaroo House manage dedicated properties specifically designed for PG living, offering amenities like WiFi, laundry, and 24/7 security.",
+    "key_points": [
+      "PG rent usually includes meals, WiFi, and housekeeping",
+      "Most PGs offer single, twin, or triple sharing options",
+      "PG agreements are typically month-to-month",
+      "Security deposit is usually 1-2 months' rent",
+      "Many PGs are gender-specific (girls-only or boys-only)"
+    ],
+    "related_terms": ["hostel", "shared-accommodation", "security-deposit", "lock-in-period"],
+    "faq": [
+      {"q": "What is the difference between PG and hostel?", "a": "A PG typically offers a more home-like, smaller-scale experience with meals and services, while hostels are larger dormitory-style facilities. PGs usually have better food quality and more personalised management."},
+      {"q": "Is PG good for students?", "a": "Yes, PGs are ideal for students because they provide furnished rooms, home-cooked meals, and a safe environment, allowing students to focus entirely on their studies without household responsibilities."},
+      {"q": "How much does a PG cost in Delhi?", "a": "PG costs in Delhi range from ₹7,000 to ₹30,000 per month depending on location, room type (single/sharing), amenities, and whether meals are included."}
+    ]
+  },
+  {
+    "id": "security-deposit",
+    "term": "Security Deposit",
+    "slug": "what-is-security-deposit-in-pg",
+    "short_definition": "A security deposit is a refundable amount paid upfront by the tenant to the PG owner as financial protection against damage or unpaid rent.",
+    "detailed_explanation": "When moving into a PG, residents are typically required to pay a security deposit equivalent to 1-2 months' rent. This deposit serves as insurance for the PG operator against potential property damage, unpaid dues, or early departure without notice. The deposit is refundable when the resident vacates, subject to deductions for any damages or outstanding payments. It's important to get a receipt and understand the refund terms before paying.",
+    "key_points": [
+      "Usually equals 1-2 months of rent",
+      "Refundable upon vacating (minus deductions)",
+      "Always get a written receipt",
+      "Deductions can include damage repair and unpaid bills",
+      "Some PGs offer reduced deposit for longer stays"
+    ],
+    "related_terms": ["paying-guest", "lock-in-period", "pg-agreement", "notice-period"],
+    "faq": [
+      {"q": "Is the PG security deposit refundable?", "a": "Yes, the security deposit is refundable when you leave the PG, provided there is no damage to property and all dues are cleared. Some PGs may deduct cleaning or painting charges."},
+      {"q": "How much security deposit do PGs charge?", "a": "Most PGs in Delhi charge 1-2 months' rent as security deposit. Some premium PGs may charge up to 3 months. At Kangaroo House, we keep deposits reasonable and transparent."},
+      {"q": "When do I get my deposit back?", "a": "Most PGs refund the security deposit within 15-30 days of vacating. It's important to give proper notice and complete the checkout process as per the PG agreement."}
+    ]
+  },
+  {
+    "id": "lock-in-period",
+    "term": "Lock-in Period",
+    "slug": "what-is-lock-in-period-in-pg",
+    "short_definition": "A lock-in period is the minimum duration you must stay at a PG, during which you cannot leave without forfeiting some or all of your security deposit.",
+    "detailed_explanation": "PG operators implement lock-in periods to ensure occupancy stability and recoup the costs of preparing a room for a new resident. Typical lock-in periods range from 1 to 3 months. If a resident leaves before the lock-in period expires, they may lose their security deposit or face a penalty. It's crucial to understand the lock-in terms before signing a PG agreement, especially if your stay duration is uncertain.",
+    "key_points": [
+      "Typically ranges from 1 to 3 months",
+      "Leaving early may mean losing your deposit",
+      "Some PGs waive lock-in periods for longer commitments",
+      "Always negotiate this before moving in",
+      "Lock-in protects both operator and resident"
+    ],
+    "related_terms": ["security-deposit", "notice-period", "pg-agreement", "paying-guest"],
+    "faq": [
+      {"q": "What happens if I leave during the lock-in period?", "a": "If you leave before the lock-in period ends, you typically forfeit your security deposit. Some PGs may charge an additional early departure fee. Always check the terms before signing."},
+      {"q": "Can I negotiate the lock-in period?", "a": "Yes, many PGs are willing to negotiate lock-in periods, especially during off-season months or if you commit to a longer overall stay."},
+      {"q": "Is a lock-in period legal?", "a": "Yes, lock-in periods are legal when agreed upon in writing by both parties. They are a standard practice in the PG and rental industry across India."}
+    ]
+  },
+  {
+    "id": "shared-accommodation",
+    "term": "Shared Accommodation",
+    "slug": "what-is-shared-accommodation",
+    "short_definition": "Shared accommodation means living with one or more people in the same room, sharing the room space and sometimes common facilities like bathrooms and kitchens.",
+    "detailed_explanation": "Shared accommodation is the most affordable option in PGs and hostels. It typically comes in twin sharing (2 persons per room) or triple sharing (3 persons per room) configurations. Each resident gets their own bed, storage space, and often a study desk. Common facilities like bathrooms may be shared or attached depending on the PG. Shared rooms are especially popular among students who benefit from the social aspect and lower costs.",
+    "key_points": [
+      "Twin sharing = 2 persons, Triple sharing = 3 persons",
+      "Each person gets their own bed and storage",
+      "30-50% cheaper than single occupancy rooms",
+      "Great for making friends and study partners",
+      "Some PGs allow you to choose your roommate"
+    ],
+    "related_terms": ["paying-guest", "single-occupancy", "hostel", "twin-sharing"],
+    "faq": [
+      {"q": "Is shared accommodation good for students?", "a": "Yes, shared accommodation is excellent for students. It's affordable, social, and helps combat homesickness. Many students form lifelong friendships with their PG roommates."},
+      {"q": "How much do I save with shared accommodation?", "a": "Shared rooms can save you 30-50% compared to single rooms. For example, if a single room costs ₹20,000/month, a twin sharing room might cost ₹12,000-14,000/month."},
+      {"q": "Can I shift from shared to single room later?", "a": "Most PGs allow room type upgrades subject to availability. Inform management in advance and be prepared for the rent difference."}
+    ]
+  },
+  {
+    "id": "notice-period",
+    "term": "Notice Period",
+    "slug": "what-is-notice-period-in-pg",
+    "short_definition": "The notice period is the advance time you must inform the PG management before vacating your room, usually 15 to 30 days.",
+    "detailed_explanation": "A notice period gives the PG operator time to find a new resident for your room. Most PGs in Delhi require 15 to 30 days' notice before vacating. Failing to provide adequate notice may result in forfeiting your security deposit or being charged for the notice period even after leaving. Always provide written notice (text message or email counts) and get an acknowledgment.",
+    "key_points": [
+      "Standard notice period is 15-30 days",
+      "Must be given in writing for proof",
+      "Failure to give notice can cost you your deposit",
+      "Some PGs accept shorter notice with a fee",
+      "Notice period starts from the date of communication"
+    ],
+    "related_terms": ["security-deposit", "lock-in-period", "pg-agreement", "paying-guest"],
+    "faq": [
+      {"q": "What if I don't give notice before leaving?", "a": "If you leave without giving proper notice, the PG operator may deduct the notice period rent from your security deposit or refuse the refund entirely."},
+      {"q": "Does notice period overlap with lock-in period?", "a": "No, the notice period applies after the lock-in period has ended. During the lock-in period, different (usually stricter) exit terms apply."},
+      {"q": "How should I give my notice?", "a": "Give written notice via text message, email, or a formal letter. Always get an acknowledgment from management and note the date for your records."}
+    ]
+  },
+  {
+    "id": "pg-agreement",
+    "term": "PG Agreement / Rental Agreement",
+    "slug": "what-is-pg-rental-agreement",
+    "short_definition": "A PG agreement is a written contract between the PG operator and resident outlining rent, deposit, rules, notice period, and other terms of stay.",
+    "detailed_explanation": "A PG agreement protects both the resident and the operator. It documents the monthly rent, security deposit amount, lock-in period, notice period, house rules, meal inclusions, and maintenance responsibilities. While not all PGs provide formal agreements, it's strongly recommended to have one. The agreement should be signed by both parties and each should keep a copy. In case of disputes, this document serves as legal proof of the agreed terms.",
+    "key_points": [
+      "Documents rent, deposit, and stay terms",
+      "Should be signed by both parties",
+      "Includes house rules and meal details",
+      "Serves as legal proof in disputes",
+      "Keep your copy safe throughout your stay"
+    ],
+    "related_terms": ["security-deposit", "lock-in-period", "notice-period", "paying-guest"],
+    "faq": [
+      {"q": "Is a PG agreement legally binding?", "a": "Yes, a signed PG agreement is a legally binding document. It protects both the resident's and operator's rights and can be used as evidence in case of disputes."},
+      {"q": "What should a PG agreement include?", "a": "A comprehensive PG agreement should include: monthly rent, security deposit amount, lock-in period, notice period, meal details, WiFi and utility inclusions, house rules, and termination conditions."},
+      {"q": "Can I stay without a PG agreement?", "a": "While it's possible, it's not recommended. Without an agreement, you have no legal protection regarding your deposit refund, rent hikes, or dispute resolution."}
+    ]
+  },
+  {
+    "id": "hostel",
+    "term": "Hostel",
+    "slug": "what-is-a-hostel",
+    "short_definition": "A hostel is a larger dormitory-style shared accommodation facility, typically offering basic amenities at lower costs than PGs, commonly used by students and budget travellers.",
+    "detailed_explanation": "Hostels differ from PGs in scale and management style. While PGs offer a home-like setting with 10-30 residents, hostels can house hundreds of people in dormitory-style rooms. College hostels are attached to educational institutions, while private hostels operate independently. Modern hostels in India have evolved to offer better amenities, but PGs generally provide more personalised service, better food quality, and a closer community feel.",
+    "key_points": [
+      "Larger scale than PGs (50-500+ residents)",
+      "Dormitory-style rooms with shared facilities",
+      "Usually cheaper than PGs",
+      "Less personalised management",
+      "College hostels have curfew and strict rules"
+    ],
+    "related_terms": ["paying-guest", "shared-accommodation", "dormitory", "coliving"],
+    "faq": [
+      {"q": "Which is better — PG or hostel?", "a": "It depends on your priorities. PGs offer better food, more privacy, and personalised management. Hostels are cheaper and offer a larger social circle. For most students in Delhi, a well-managed PG offers the best value."},
+      {"q": "Are hostels safe for girls?", "a": "College hostels are generally safe with strict rules. For private hostels, check for CCTV, security guards, and female staff. Girls-only PGs often provide better security than co-ed hostels."},
+      {"q": "Do hostels include meals?", "a": "College hostels usually include meals. Private hostels may or may not include meals — always confirm before booking. Most PGs include meals as standard."}
+    ]
+  },
+  {
+    "id": "coliving",
+    "term": "Coliving Space",
+    "slug": "what-is-coliving",
+    "short_definition": "Coliving is a modern shared living concept where residents get private bedrooms with shared community spaces like kitchens, lounges, and coworking areas, often managed by tech-enabled platforms.",
+    "detailed_explanation": "Coliving has emerged as a premium alternative to traditional PGs, targeting millennials and young professionals. Unlike PGs, coliving spaces are typically managed by startups (like Stanza Living, Zolo) and feature app-based room management, community events, and modern interiors. While coliving offers a premium experience, it comes at a higher price point. For students and budget-conscious residents, well-managed PGs like Kangaroo House offer similar amenities at more affordable rates.",
+    "key_points": [
+      "Modern, tech-enabled accommodation model",
+      "Private rooms + shared community spaces",
+      "Managed by organised startups",
+      "Higher price than traditional PGs",
+      "App-based services and community events"
+    ],
+    "related_terms": ["paying-guest", "hostel", "shared-accommodation", "working-professionals"],
+    "faq": [
+      {"q": "How is coliving different from PG?", "a": "Coliving spaces are typically more expensive, tech-enabled, and target young professionals. PGs are more affordable, home-like, and focus on students. The core services (furnished rooms, meals, WiFi) are similar."},
+      {"q": "Is coliving worth the extra cost?", "a": "If you value modern interiors, community events, and app-based management, coliving can be worth it. However, good PGs offer comparable amenities at 30-40% lower cost."},
+      {"q": "Are coliving spaces available near Ashok Nagar?", "a": "While major coliving brands haven't fully penetrated East Delhi yet, Kangaroo House PGs near Ashok Nagar offer a similar experience with modern amenities, community feel, and professional management at affordable prices."}
+    ]
+  }
+]

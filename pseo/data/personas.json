@@ -1,0 +1,188 @@
+[
+  {
+    "id": "college-students",
+    "name": "College Students",
+    "slug": "pg-for-college-students",
+    "gender": "all",
+    "title": "Best PG for College Students in Delhi",
+    "description": "Finding the right PG during college can make or break your academic experience. College students need affordable, comfortable, and safe accommodation with meal services, reliable WiFi for online classes, and proximity to their campus.",
+    "pain_points": [
+      "Limited budget for accommodation",
+      "Need proximity to college campus",
+      "Missing home-cooked meals",
+      "Difficulty finding safe and verified PGs",
+      "Need reliable WiFi for online classes and assignments"
+    ],
+    "solutions": [
+      "Affordable plans starting from ₹7,500/month with meals included",
+      "PGs located within walking distance of Maharaja Agrasen College and Shaheed Rajguru College",
+      "4-time homely meals including breakfast, lunch, snacks, and dinner",
+      "Verified, CCTV-monitored properties with 24/7 security",
+      "High-speed WiFi in every room for uninterrupted study"
+    ],
+    "benefits": [
+      "More time for studies — no commute, no cooking",
+      "Homely atmosphere reduces homesickness",
+      "Ready-made friend circle with fellow students",
+      "All-inclusive pricing — no surprise bills",
+      "Dedicated study desk in every room"
+    ],
+    "recommended_pgs": ["sanvi-girls-pg", "krishna-boys-pg", "balaji-pg"],
+    "keywords": ["PG for students near MAC", "student PG Delhi", "college student hostel Ashok Nagar", "PG near Maharaja Agrasen College for students"]
+  },
+  {
+    "id": "working-women",
+    "name": "Working Women",
+    "slug": "pg-for-working-women",
+    "gender": "female",
+    "title": "Best PG for Working Women in Delhi",
+    "description": "Working women in Delhi need more than just a room — they need a safe, comfortable, and well-managed living space that fits their professional lifestyle. From late-night work schedules to early morning routines, the right PG must accommodate it all.",
+    "pain_points": [
+      "Safety concerns — especially for late-night commutes",
+      "Need privacy and personal space after work",
+      "Unpredictable work hours make meal timing difficult",
+      "Limited time for chores like laundry and cleaning",
+      "Difficulty finding female-only, well-managed PGs"
+    ],
+    "solutions": [
+      "Women-only PGs with 24/7 CCTV and security guards",
+      "Private single rooms available with attached bathrooms",
+      "Flexible meal timings with packed dinner option",
+      "Laundry and housekeeping services included",
+      "Gender-verified, professionally managed properties"
+    ],
+    "benefits": [
+      "Complete peace of mind with verified female-only accommodation",
+      "Zero household chores — focus entirely on your career",
+      "Ready-to-eat meals save 2+ hours daily",
+      "Close to metro stations for easy commute",
+      "Community of like-minded professional women"
+    ],
+    "recommended_pgs": ["sanvi-girls-pg", "lakshmi-girls-pg", "swami-vivekanand-pg"],
+    "keywords": ["working women PG Delhi", "girls PG Ashok Nagar", "safe PG for women East Delhi", "ladies PG near metro"]
+  },
+  {
+    "id": "upsc-aspirants",
+    "name": "UPSC & Competitive Exam Aspirants",
+    "slug": "pg-for-upsc-aspirants",
+    "gender": "all",
+    "title": "Best PG for UPSC Aspirants near Laxmi Nagar & Ashok Nagar",
+    "description": "UPSC and competitive exam preparation demands months of focused study. Aspirants need a distraction-free, comfortable PG with reliable meals, so they can devote maximum time to preparation without worrying about daily chores.",
+    "pain_points": [
+      "Need absolute focus — distractions kill preparation",
+      "Long study hours require healthy, regular meals",
+      "Budget constraints during extended preparation periods",
+      "Need proximity to coaching centres in Laxmi Nagar",
+      "Isolation and mental health during preparation"
+    ],
+    "solutions": [
+      "Quiet, study-friendly environment with dedicated desks",
+      "4-time nutritious meals to fuel long study sessions",
+      "Affordable long-stay plans for 6-12 month preparation",
+      "Located near Laxmi Nagar coaching hub via Blue Line metro",
+      "Community of fellow aspirants for peer motivation"
+    ],
+    "benefits": [
+      "Save 3+ hours daily on cooking, commuting, and chores",
+      "Dedicated study desk with good lighting in every room",
+      "Peer group of serious aspirants keeps you motivated",
+      "AC rooms available for comfortable year-round study",
+      "Flexible stay durations — monthly, quarterly, or yearly"
+    ],
+    "recommended_pgs": ["krishna-boys-pg", "balaji-pg", "sanvi-girls-pg"],
+    "keywords": ["PG for UPSC aspirants Delhi", "hostel near Laxmi Nagar coaching", "PG for competitive exam students", "study PG Ashok Nagar"]
+  },
+  {
+    "id": "working-professionals",
+    "name": "Working Professionals",
+    "slug": "pg-for-working-professionals",
+    "gender": "all",
+    "title": "Best PG for Working Professionals in East Delhi",
+    "description": "Young professionals starting their careers in Delhi and Noida need modern, hassle-free accommodation that matches their lifestyle. A good PG eliminates the headaches of independent living while providing a professional environment.",
+    "pain_points": [
+      "High cost of independent flats in Delhi/Noida",
+      "No time for cooking, cleaning, or household management",
+      "Need stable WiFi for work-from-home days",
+      "Safety and privacy concerns in shared housing",
+      "Finding furnished accommodation without huge deposits"
+    ],
+    "solutions": [
+      "Fully furnished rooms — move in with just your suitcase",
+      "All meals, laundry, and housekeeping taken care of",
+      "High-speed WiFi supporting video calls and remote work",
+      "Private rooms available with attached bathrooms",
+      "Reasonable security deposit with flexible lease terms"
+    ],
+    "benefits": [
+      "Save ₹10,000+/month compared to independent flat + expenses",
+      "Zero setup cost — fully furnished from day one",
+      "Focus entirely on your career — we handle the rest",
+      "Metro-accessible locations for easy office commute",
+      "Professional community of young working residents"
+    ],
+    "recommended_pgs": ["balaji-pg", "swami-vivekanand-pg", "krishna-boys-pg"],
+    "keywords": ["PG for working professionals Delhi", "PG near Noida for professionals", "working men PG East Delhi", "furnished PG for job holders"]
+  },
+  {
+    "id": "girl-students",
+    "name": "Girl Students",
+    "slug": "pg-for-girl-students",
+    "gender": "female",
+    "title": "Best Girls PG for Female Students in Delhi",
+    "description": "Parents and female students prioritise safety above all when choosing accommodation in Delhi. A girls-only PG with proper security, CCTV, verified staff, and a caring management ensures complete peace of mind for families living far away.",
+    "pain_points": [
+      "Safety is the #1 concern for parents and students",
+      "Fear of co-ed environments and unverified PGs",
+      "Homesickness — especially for outstation students",
+      "Need affordable options without compromising safety",
+      "Dietary needs and meal quality concerns"
+    ],
+    "solutions": [
+      "Strictly female-only PGs with female staff supervision",
+      "24/7 CCTV surveillance and security guard at premises",
+      "Regular communication channel for parents with management",
+      "Transparent pricing with no hidden charges",
+      "Homely North Indian meals prepared with hygienic ingredients"
+    ],
+    "benefits": [
+      "100% safe, women-only environment",
+      "Parents can visit or call management anytime",
+      "Sisterly bond with fellow girl students",
+      "Walking distance to colleges — no late-night travel",
+      "Clean, well-maintained rooms with daily housekeeping"
+    ],
+    "recommended_pgs": ["sanvi-girls-pg", "lakshmi-girls-pg", "swami-vivekanand-pg"],
+    "keywords": ["girls PG near Ashok Nagar", "safe PG for female students Delhi", "girls hostel near MAC", "women PG Vasundhara Enclave"]
+  },
+  {
+    "id": "outstation-students",
+    "name": "Outstation Students",
+    "slug": "pg-for-outstation-students",
+    "gender": "all",
+    "title": "Best PG for Outstation Students Coming to Delhi",
+    "description": "Moving to Delhi from another city is exciting but daunting. Outstation students need a welcoming, trustworthy PG that handles all daily needs — meals, laundry, security — so they can settle in quickly and focus on their goals.",
+    "pain_points": [
+      "No local contacts or knowledge of the city",
+      "Fear of scams and unverified PG operators",
+      "Cultural adjustment and homesickness",
+      "Language barriers (Hindi/English fluency varies)",
+      "Need everything from scratch — bedding, furniture, kitchen"
+    ],
+    "solutions": [
+      "Fully furnished rooms — just bring your suitcase and move in",
+      "Trusted, reviewed PG with transparent operations",
+      "Warm community atmosphere that helps with settling in",
+      "Hindi and English speaking staff for easy communication",
+      "Complete living package — meals, WiFi, laundry, security"
+    ],
+    "benefits": [
+      "Move-in ready — no furniture shopping needed",
+      "Instant friend circle of fellow outstation students",
+      "Home-style meals reduce homesickness significantly",
+      "Management assists with local orientation",
+      "Safe neighbourhood verified by years of hosting students"
+    ],
+    "recommended_pgs": ["sanvi-girls-pg", "krishna-boys-pg", "balaji-pg", "swami-vivekanand-pg", "lakshmi-girls-pg"],
+    "keywords": ["PG for outstation students Delhi", "hostel for newcomers Delhi", "PG for students from other states", "best PG for first time in Delhi"]
+  }
+]
