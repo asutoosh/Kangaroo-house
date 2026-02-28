@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Page Not Found | Kangaroo House PG & Hostel</title>
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body{background:#000;color:#fff;min-height:100vh;display:flex;flex-direction:column}
+        .error-page{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;margin-top:80px}
+        .error-content{max-width:600px}
+        .error-code{font-size:clamp(6rem,15vw,12rem);font-weight:900;background:linear-gradient(135deg,var(--primary-color),#c084fc,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:1rem;animation:float 3s ease-in-out infinite}
+        @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+        .error-emoji{font-size:4rem;margin-bottom:1.5rem;display:block}
+        .error-title{font-size:1.75rem;font-weight:800;margin-bottom:1rem}
+        .error-desc{color:#888;font-size:1.05rem;line-height:1.7;margin-bottom:2.5rem}
+        .error-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+        .error-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;border-radius:12px;font-weight:700;font-size:.9rem;text-decoration:none;text-transform:uppercase;letter-spacing:.05em;transition:all .3s}
+        .error-btn-primary{background:linear-gradient(135deg,var(--primary-color),#9333ea);color:#fff}
+        .error-btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(168,85,247,.4)}
+        .error-btn-secondary{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#fff}
+        .error-btn-secondary:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)}
+        .error-links{margin-top:3rem;display:flex;gap:2rem;justify-content:center;flex-wrap:wrap}
+        .error-links a{color:#666;text-decoration:none;font-size:.85rem;transition:color .3s}
+        .error-links a:hover{color:var(--primary-color)}
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo"><a href="https://kangaroohousing.in" style="display:flex;align-items:center;gap:.75rem;text-decoration:none;color:inherit"><span class="logo-icon">🦘</span><span class="logo-text">KANGAROO HOUSE</span></a></div>
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="pages/pg/PG.html">PG</a></li>
+                    <li><a href="pages/blog/blog.html">BLOG</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="pages/about/gallery.html">GALLERY</a></li>
+                    <li><a href="pages/about/about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <main class="error-page">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <span class="error-emoji">🦘💨</span>
+            <h1 class="error-title">Oops! This page hopped away</h1>
+            <p class="error-desc">The page you're looking for doesn't exist or has been moved. Don't worry — let us help you find your way back.</p>
+            <div class="error-actions">
+                <a href="index.html" class="error-btn error-btn-primary">🏠 Back to Home</a>
+                <a href="pages/pg/PG.html" class="error-btn error-btn-secondary">🛏️ Browse PGs</a>
+                <a href="contact.html" class="error-btn error-btn-secondary">📞 Contact Us</a>
+            </div>
+            <div class="error-links">
+                <a href="faq.html">FAQ</a>
+                <a href="pages/blog/blog.html">Blog</a>
+                <a href="pages/about/about.html">About Us</a>
+                <a href="pages/amenities/amenities.html">Amenities</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer"><div class="footer-container"><div class="footer-legal"><p>&copy; 2026 Kangaroo House. All rights reserved.</p></div></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>

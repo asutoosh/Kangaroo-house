@@ -1,8 +1,30 @@
 User-agent: *
 Allow: /
 
-# Disallow admin/technical paths (none currently)
-
 Sitemap: https://kangaroohousing.in/sitemap.xml
 
+# Core Pages
+Allow: /index.html
+Allow: /contact.html
+Allow: /faq.html
+Allow: /pricing.html
+Allow: /privacy-policy.html
+Allow: /terms-and-conditions.html
 
+# Blog
+Allow: /pages/blog/
+
+# PG Pages
+Allow: /pages/pg/
+
+# SEO Pages
+Allow: /pages/seo/
+
+# About
+Allow: /pages/about/
+
+# Amenities
+Allow: /pages/amenities/
+
+# Block crawlers from error page
+Disallow: /404.html

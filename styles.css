@@ -2290,89 +2290,54 @@ body {
     transition-delay: 0s;
 }
 
+
 /* ========================================
-   Rolling Text Animation
+   WhatsApp Floating Button
    ======================================== */
 
-.hero-location-wrapper {
+.whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    background: #25D366;
+    border-radius: 50%;
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    gap: 0.35rem;
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.8);
-    margin-top: 1.5rem;
-    text-align: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-.hero-location-static {
-    color: rgba(255, 255, 255, 0.6);
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
 }
 
-.rolling-text-mask {
-    height: 1.8em; /* Increased to show descenders (y, g, p, etc.) */
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    text-align: left;
-}
-
-.rolling-text-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    animation: scrollUp 10s cubic-bezier(0.65, 0, 0.35, 1) infinite;
-}
-
-.rolling-text-list li {
-    height: 1.8em; /* Match mask height - shows descenders */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: var(--primary-color);
-    font-weight: 800;
-    font-size: 1.3em;
-    white-space: nowrap;
-}
-
-@keyframes scrollUp {
-    0% { transform: translateY(0); }
-    16% { transform: translateY(0); }
-    20% { transform: translateY(-16.66%); }
-    36% { transform: translateY(-16.66%); }
-    40% { transform: translateY(-33.33%); }
-    56% { transform: translateY(-33.33%); }
-    60% { transform: translateY(-50%); }
-    76% { transform: translateY(-50%); }
-    80% { transform: translateY(-66.66%); }
-    96% { transform: translateY(-66.66%); }
-    100% { transform: translateY(-83.33%); }
-}
-
-/* Mobile Adjustment */
-@media (max-width: 480px) {
-    .hero-location-wrapper {
-        flex-wrap: wrap;
-        justify-content: center;
-        font-size: 1rem;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.25rem;
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 16px;
+        right: 16px;
+        width: 50px;
+        height: 50px;
     }
-    
-    .rolling-text-mask {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .rolling-text-list {
-        width: 100%;
-    }
-    
-    .rolling-text-list li {
-        justify-content: center;
-        width: 100%;
-    }
+}
+
+/* Skip Link */
+.skip-link:focus {
+    top: 0 !important;
+}
+
+/* Print Stylesheet */
+@media print {
+    body { background: #fff !important; color: #000 !important; font-size: 12pt; }
+    .header, .nav-toggle, .whatsapp-float, .skip-link, .stats-section, footer, .blog-post-cta, .faq-cta-box { display: none !important; }
+    a { color: #000 !important; text-decoration: underline; }
+    .hero, .contact-hero, .faq-page-hero, .pricing-hero { background: #fff !important; color: #000 !important; -webkit-text-fill-color: #000 !important; padding: 1rem 0 !important; min-height: auto !important; }
+    h1, h2, h3, h4, h5, h6 { color: #000 !important; -webkit-text-fill-color: #000 !important; background: none !important; }
+    .pricing-card, .info-card, .faq-page-item { break-inside: avoid; border: 1px solid #ccc !important; background: #fff !important; margin-bottom: 1rem; }
+    * { box-shadow: none !important; text-shadow: none !important; }
 }

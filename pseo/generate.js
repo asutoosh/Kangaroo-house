@@ -52,11 +52,22 @@ function baseHead(title, metaDesc, canonical) {
     })(window,document,'script','dataLayer','GTM-53TS9Z6V');</script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR0KJ734K7"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-GR0KJ734K7');</script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="${escHtml(metaDesc)}">
     <link rel="canonical" href="https://kangaroohousing.in${canonical}">
     <title>${escHtml(title)}</title>
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="${escHtml(title)}">
+    <meta property="og:description" content="${escHtml(metaDesc)}">
+    <meta property="og:url" content="https://kangaroohousing.in${canonical}">
+    <meta property="og:image" content="https://kangaroohousing.in/favicon/web-app-manifest-512x512.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
